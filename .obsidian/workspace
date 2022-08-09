@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "graph/tree/diameter.md",
+            "file": "graph/shortest_path/dijkstra.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "graph/tree/diameter.md",
+                "file": "graph/shortest_path/dijkstra.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "c0b42f921548b21f",
   "lastOpenFiles": [
-    "graph/scc.md",
+    "graph/shortest_path/floyd_warshall.md",
+    "crypto/SchnorrSignatures.md",
+    "graph/shortest_path/dijkstra.md",
+    "graph/shortest_path/bellman_ford.md",
     "graph/tree/diameter.md",
+    "graph/scc.md",
     "heuristic/SimulatedAnnealing.md",
     "heuristic/HillClimbing.md",
     "heuristic/heuristic.md",
-    "heuristic/chokudaiSearch.md",
-    "heuristic/BeamSearch.md",
-    "crypto/SchnorrSignatures.md",
-    "crypto/sagemath.md",
-    "crypto/ECC/Invalid-Curve-Attack.md"
+    "heuristic/chokudaiSearch.md"
   ]
 }
