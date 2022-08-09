@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "graph/scc.md",
+            "file": "graph/tree/diameter.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "graph/scc.md",
+                "file": "graph/tree/diameter.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,6 +89,8 @@
   },
   "active": "c0b42f921548b21f",
   "lastOpenFiles": [
+    "graph/scc.md",
+    "graph/tree/diameter.md",
     "heuristic/SimulatedAnnealing.md",
     "heuristic/HillClimbing.md",
     "heuristic/heuristic.md",
@@ -96,8 +98,6 @@
     "heuristic/BeamSearch.md",
     "crypto/SchnorrSignatures.md",
     "crypto/sagemath.md",
-    "crypto/ECC/Invalid-Curve-Attack.md",
-    "crypto/AES/AES.md",
-    "memo/CTF/Pwn/Pwn.md"
+    "crypto/ECC/Invalid-Curve-Attack.md"
   ]
 }
