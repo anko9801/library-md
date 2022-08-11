@@ -7,6 +7,8 @@ layout: library
 
 ## 説明
 
+競プロで使うテンプレート
+
 ## 実装
 
 {% include cpp.html code="template/template.cpp" %}

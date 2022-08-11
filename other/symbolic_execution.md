@@ -16,7 +16,7 @@ layout: library
 ## 実装
 
 レジスタ, メモリに関する制約とSSA形式のIRを条件式としてSMTソルバで解く。
-- [mini_symbolic](https://github.com/anko9801/mini_symbolic)
+- [Rustでの実装 (mini_symbolic)](https://github.com/anko9801/mini_symbolic)
 
 ## 使用例
 
