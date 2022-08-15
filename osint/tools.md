@@ -14,3 +14,6 @@ twitter [https://twilog.org twilog]
 - ファイル・ドメインのレピュテーションチェック: [https://virustotal.com/](https://virustotal.com/ "https://virustotal.com/") , [https://any.run/](https://any.run/ "https://any.run/")
 
 Tor onionアドレス
+
+[OSINT Framework](https://osintframework.com/)
+Project Owl
