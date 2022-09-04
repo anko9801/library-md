@@ -53,7 +53,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 188
+    "width": 316.5
   },
   "right": {
     "id": "0ba8c1c70a95dace",
@@ -89,15 +89,15 @@
   },
   "active": "babd2a0e20d9bfd1",
   "lastOpenFiles": [
-    "memo.md",
-    "Untitled.md",
+    "heuristic/heuristic.md",
     "README.md",
-    "cpu.md",
-    "other/rootkit.md",
-    "math/Field.md",
-    "crypto/RSA/ROCA.md",
-    "crypto/ECC/SSSA-Attack.md",
-    "crypto/ECC/PohligHellman.md",
-    "crypto/ECC/Millar.md"
+    "template/template.md",
+    "snippets/hill-climbing.md",
+    "crypto/ECC/Pohlig-Hellman.md",
+    "crypto/RSA/LSB-DecryptionOracleAttack.md",
+    "crypto/RSA/HåstadsBroadcastAttack.md",
+    "crypto/DLP/Pohlig_Hellman.md",
+    "crypto/DLP/BSGS.md",
+    "crypto/schnorr.md"
   ]
 }

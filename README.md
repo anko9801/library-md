@@ -12,13 +12,13 @@ CTFのライブラリ/知識集らしいです。(現在はLYTに近い思想で
 
 ## データ構造
 
-- [UnionFind](./snippets/unionfind.md)
-  - [ポテンシャル付きUnionFind](./snippets/potential-unionfind.md)
-  - [永続UnionFind](./snippets/persist-unionfind.md)
-- [BIT (Binary-Indexed-Tree) / Fenwick Tree](./snippets/bit.md)
-- [セグメント木](./snippets/segtree.md)
-  - [遅延セグメント木](./snippets/lazysegtree.md)
-  - [Segment Tree Beats](./snippets/segtreebeats.md)
+- [UnionFind](./data_structure/unionfind/unionfind.md)
+  - [ポテンシャル付きUnionFind](./data_structure/unionfind/potential_unionfind.md)
+  - [永続UnionFind](./data_structure/unionfind/persist_unionfind.md)
+- [BIT (Binary-Indexed-Tree) / Fenwick Tree](./data_structure/bit/bit.md)
+- [セグメント木](./data_stracture/segtree/segtree.md)
+  - [遅延セグメント木](./data_structure/segtree/lazysegtree.md)
+  - [Segment Tree Beats](./data_structure/segtree/segtreebeats.md)
 - 平衡二分探索木
   - 赤黒木
   - AVL木
@@ -26,55 +26,55 @@ CTFのライブラリ/知識集らしいです。(現在はLYTに近い思想で
   - Treap
 - Wavelet Matrix
 - 座標圧縮
-- [slope trick](./snippets/slope-trick.md)
+- [slope trick](./data_structure/slope_trick.md)
 
 ## グラフ
 
 - 最短路
-  - [単一始点最短路 $O(E\log V)$ (Dijkstra)](./snippets/dijkstra.md)
-  - [単一始点最短路 $O(EV)$ (Bellman-Ford)](./snippets/bellman-ford.md)
+  - [単一始点最短路 $O(E\log V)$ (Dijkstra)](./graph/shortest_path/dijkstra.md)
+  - [単一始点最短路 $O(EV)$ (Bellman-Ford)](./graph/shortest_path/bellman_ford.md)
   - k-最短路
-  - [全点対間最短路 $O(V^3)$ (Floyd Warshall)](./snippets/floyd-warshall.md)
+  - [全点対間最短路 $O(V^3)$ (Floyd Warshall)](./graph/shortest_path/floyd_warshall.md)
   - 全点対間最短路 $O((V + E)V\log V)$ (Johnson)
 - 全域木
   - 最小全域森 (Kruskal)
   - 行列木定理
 - フロー
-  - [最大流 (Dinic)](./snippets/dinic.md)
-  - [最大流 (Ford Fulkerson)](./snippets/ford-fulkerson.md)
+  - [最大流 (Dinic)](./graph/flow/dinic.md)
+  - [最大流 (Ford Fulkerson)](./graph/flow/ford_fulkerson.md)
 - マッチング
   - 二部グラフ判定
   - 最大マッチング
 - ツリー
-  - [木の直径](./snippets/tree-diameter.md)
+  - [木の直径](./graph/tree/tree_diameter.md)
   - 最小共通祖先
 - Functional Graph
 - 最大クリーク
-- [強連結成分分解](./snippets/scc.md)
+- [強連結成分分解](./graph/scc.md)
 
 ## 数学
 
 - modulo
-  - [Modint](./snippets/modint.md)
-  - [任意Modint](./snippets/arbitrary-modint.md)
+  - [Modint](./arithmetic/modulo/modint.md)
+  - [任意Modint](./arithmetic/modulo/arbitrary_modint.md)
   - sqrt (Tonelli Shanks)
 - 進数変換
-- [gcd / lcm / 拡張 Euclid の互除法](./snippets/gcd.md)
-- [中国剰余定理](./snippets/crt.md)
+- [gcd / lcm / 拡張 Euclid の互除法](./arithmetic/gcd.md)
+- [中国剰余定理](./arithmetic/crt.md)
 - スライド最小値
 - floor sum
 - 行列演算
-  - [行列](./snippets/matrix.md)
+  - [行列](./arithmetic/matrix/matrix.md)
   - LU分解
   - 固有値・固有ベクトル
 - 素数
-  - [素因数分解](./snippets/factorize.md)
-  - [高速素因数分解 (Pollard-$\rho$法/Millar-Rabin)](./snippets/fast-factorize.md)
+  - [素因数分解](./arithmetic/primes/factorize.md)
+  - [高速素因数分解 (Pollard-$\rho$法/Millar-Rabin)](./arithmetic/primes/fast-factorize.md)
   - 素数判定
-  - [素数列挙 (エラトステネスの篩)](./snippets/primes.md)
-- [高速ゼータ変換/高速メビウス変換](./snippets/zeta.md)
-- [高速フーリエ変換(FFT)](./snippets/fft.md)
-- [数論変換(NTT)](./snippets/ntt.md)
+  - [素数列挙 (エラトステネスの篩)](./arithmetic/primes/primes.md)
+- [高速ゼータ変換/高速メビウス変換](./arithmetic/zeta.md)
+- [高速フーリエ変換(FFT)](./arithmetic/fft.md)
+- [数論変換(NTT)](./arithmetic/ntt.md)
 - 多項式GCD
 - 形式的冪級数
 - 任意mod畳み込み
@@ -85,7 +85,7 @@ CTFのライブラリ/知識集らしいです。(現在はLYTに近い思想で
 
 ## 幾何
 
-- [幾何ライブラリ](./snippets/geometry.md)
+- [幾何ライブラリ](./geometry/geometry.md)
 - 偏角ソート
 
 ## 文字列
@@ -99,10 +99,10 @@ CTFのライブラリ/知識集らしいです。(現在はLYTに近い思想で
 
 ## ヒューリスティック
 
-- [山登り法](./snippets/hill-climbing.md)
-- [焼きなまし法](./snippets/simulated-annealing.md)
-- [ビームサーチ](./snippets/beam-search.md)
-- [chokudai サーチ](./snippets/chokudai-search.md)
+- [山登り法](./heuristic/hill_climbing.md)
+- [焼きなまし法](./heuristic/simulated_annealing.md)
+- [ビームサーチ](./heuristic/beam_search.md)
+- [chokudai サーチ](./heuristic/chokudai_search.md)
 
 ## Pwn
 
@@ -137,18 +137,18 @@ CTFのライブラリ/知識集らしいです。(現在はLYTに近い思想で
 使用言語はPythonまたはSageMathです。それぞれの暗号自体を取り扱うのではなく、Cryptoの背景にある理論を取り扱っていきます。
 
 - 暗号構成基盤
-  - [Diffie-Hellman 鍵交換](./snippets/diffie-hellman.md)
+  - [Diffie-Hellman 鍵交換](./crypto/Diffie-Hellman.md)
   - Fiat-Shamir 変換
-    - [Schnorr 署名](./snippets/schnorr.md)
+    - [Schnorr 署名](./crypto/schnorr.md)
     - Frozen Heart
   - Lamport 署名
   - ゼロ知識証明
 - 格子
   - Gram-Schmidt
   - SVP (Shortest Vector Problem)
-    - [Lagrange 基底簡約 (Gauss 基底簡約)](./snippets/lagrange.md)
-    - [サイズ基底簡約](./snippets/size-reduction.md)
-    - [LLL 基底簡約](./snippets/lll.md)
+    - [Lagrange 基底簡約 (Gauss 基底簡約)](./crypto/Lattice/Lagrange.md)
+    - [サイズ基底簡約](./crypto/Lattice/size_reduction.md)
+    - [LLL 基底簡約](./crypto/Lattice/LLL.md)
     - BKZ 基底簡約 / HKZ 基底簡約
     - Kannan’s embedding method
   - CVP (Closest Vector Problem)
@@ -166,9 +166,9 @@ CTFのライブラリ/知識集らしいです。(現在はLYTに近い思想で
     - Module-LWE
       - CRYSTALS
     - LWR
-  - [TFHE (Torus Fully Homomorphic Encryption)](./snippets/tfhe.md)
+  - [TFHE (Torus Fully Homomorphic Encryption)](./crypto/Lattice/TFHE.md)
 - 多項式
-  - [Coppersmith Method](./snippets/coppersmith.md)
+  - [Coppersmith Method](./crypto/coppersmith.md)
   - グレブナー基底
   - 終結式
   - MQ 問題
@@ -180,24 +180,24 @@ CTFのライブラリ/知識集らしいです。(現在はLYTに近い思想で
   - ディオファントス方程式
     - 二平方和
     - ペル方程式
-  - [離散対数問題 (DLP)](./snippets/dlp.md)
-    - [Baby-step Giant-step](./snippets/bsgs.md)
-    - [Pollard's rho 法](./snippets/pollards-rho.md)
+  - [離散対数問題 (DLP)](./crypto/DLP/DLP.md)
+    - [Baby-step Giant-step](./crypto/DLP/BSGS.md)
+    - [Pollard's rho 法](./crypto/DLP/Pollard_rho.md)
     - 指数計算法 (Index Calculus Algorithm)
     - 数体ふるい法
-    - [Pohlig–Hellman](./snippets/pohlig-hellman.md)
-- [RSA暗号](./snippets/rsa.md)
-  - [Wiener's Attack](./snippets/wieners-attack.md)
-  - [Boneh-Durfee Attack](./snippets/boneh-durfee.md)
-  - [Common Modulus Attack](./snippets/common-modulus.md)
-  - [Håstad's Broadcast Attack](./snippets/hastads-broadcast.md)
-  - [Small Common Private Exponent Attack](./snippets/small-private-exponent.md)
-  - [適応的選択暗号文攻撃](./snippets/rsa-cca.md)
-  - [LSB Decryption Oracle Attack](./snippets/lsb-decryption-oracle.md)
-  - [RSA-CRT Fault Attack](./snippets/rsa-crt-fault.md)
-  - [Franklin-Reiter Related Message Attack](./snippets/franklin-reiter.md)
-  - [Partial Key Exposure Attack](./snippets/partial-key.md)
-  - [逆元が存在しないとき](./snippets/no-inverse.md)
+    - [Pohlig–Hellman](./crypto/DLP/Pohlig_Hellman.md)
+- [RSA暗号](./crypto/RSA/RSA.md)
+  - [Wiener's Attack](./crypto/RSA/WienersAttack.md)
+  - [Boneh-Durfee Attack](./crypto/RSA/Boneh-DurfeeAttack.md)
+  - [Common Modulus Attack](./crypto/RSA/CommonModulus.md)
+  - [Håstad's Broadcast Attack](./crypto/RSA/HåstadsBroadcastAttack.md)
+  - [Small Common Private Exponent Attack](./crypto/RSA/SmallCommonPrivateExponentAttack.md)
+  - [適応的選択暗号文攻撃](./crypto/RSA/RSA-CCA.md)
+  - [LSB Decryption Oracle Attack](./crypto/RSA/LSB-DecryptionOracleAttack.md)
+  - [RSA-CRT Fault Attack](./crypto/RSA/RSA-CRT-FaultAttack.md)
+  - [Franklin-Reiter Related Message Attack](./crypto/RSA/Franklin-ReiterRelatedMessageAttack.md)
+  - [Partial Key Exposure Attack](./crypto/RSA/PartialKeyExposureAttack.md)
+  - [逆元が存在しないとき](./crypto/RSA/NoInverse.md)
   - ROCA Attack
 - 楕円曲線暗号
   - 楕円曲線
@@ -208,7 +208,7 @@ CTFのライブラリ/知識集らしいです。(現在はLYTに近い思想で
     - Fujisaki-Okamoto Transformation
     - 超楕円曲線
   - 攻撃
-    - [Pohlig-Hellman Attack](./snippets/pohlig-hellman-ec.md)
+    - [Pohlig-Hellman Attack](./crypto/ECC/Pohlig-Hellman.md)
     - MOV Reduction
     - FR Reduction
     - SSSA Attack
@@ -227,7 +227,7 @@ CTFのライブラリ/知識集らしいです。(現在はLYTに近い思想で
   - 誕生日攻撃
 - 疑似乱数生成器 (PRNG)
   - Xorshift
-  - [Mersenne twister](./snippets/mersenne-twister.md)
+  - [Mersenne twister](./crypto/PRNG/MersenneTwister.md)
 - ブロックチェーン
   - Flash Loan Attack
 
@@ -297,17 +297,17 @@ Webに関してはよわよわなので読み込むと良いかもしれない�
 - データベース
 - ネットワーク構成
 - Z3
-  - [シンボリック実行エンジン](./snippets/symbolic-execution.md)
+  - [シンボリック実行エンジン](./other/symbolic_execution.md)
 - 定理証明支援系
 - Deep Learning
 - [【画像処理入門】アルゴリズム＆プログラミング](https://algorithm.joho.info/programming/image-processing/)
 - 超解像
-- [高速化](./snippets/fast.md)
+- [高速化](./other/fast.md)
 
 ## テンプレート
 
-- [競プロ](./snippets/template.md)
-- [ヒューリスティック](./snippets/heuristic.md)
-- [pwn](./snippets/pwn.md)
-- [Kernel exploit](./snippets/kernel-exploit.md)
-- [SageMathチートシート](./snippets/sagemath.md)
+- [競プロ](./template/template.md)
+- [ヒューリスティック](./heuristic/heuristic.md)
+- [pwn](./pwn/pwn.md)
+- [Kernel exploit](./pwn/kernel_exploit.md)
+- [SageMathチートシート](./crypto/sagemath.md)
