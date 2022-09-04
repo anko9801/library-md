@@ -69,7 +69,7 @@ CTFのライブラリ/知識集らしいです。(現在はLYTに近い思想で
   - 固有値・固有ベクトル
 - 素数
   - [素因数分解](./arithmetic/primes/factorize.md)
-  - [高速素因数分解 (Pollard-$\rho$法/Millar-Rabin)](./arithmetic/primes/fast-factorize.md)
+  - [高速素因数分解 (Pollard-$\rho$法/Millar-Rabin)](./arithmetic/primes/fast_factorize.md)
   - 素数判定
   - [素数列挙 (エラトステネスの篩)](./arithmetic/primes/primes.md)
 - [高速ゼータ変換/高速メビウス変換](./arithmetic/zeta.md)
@@ -185,7 +185,7 @@ CTFのライブラリ/知識集らしいです。(現在はLYTに近い思想で
     - [Pollard's rho 法](./crypto/DLP/Pollard_rho.md)
     - 指数計算法 (Index Calculus Algorithm)
     - 数体ふるい法
-    - [Pohlig–Hellman](./crypto/DLP/Pohlig_Hellman.md)
+    - [Pohlig-Hellman](./crypto/DLP/Pohlig_Hellman.md)
 - [RSA暗号](./crypto/RSA/RSA.md)
   - [Wiener's Attack](./crypto/RSA/WienersAttack.md)
   - [Boneh-Durfee Attack](./crypto/RSA/Boneh-DurfeeAttack.md)
