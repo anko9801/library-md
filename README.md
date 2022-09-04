@@ -16,7 +16,7 @@ CTFのライブラリ/知識集らしいです。(現在はLYTに近い思想で
   - [ポテンシャル付きUnionFind](./data_structure/unionfind/potential_unionfind.md)
   - [永続UnionFind](./data_structure/unionfind/persist_unionfind.md)
 - [BIT (Binary-Indexed-Tree) / Fenwick Tree](./data_structure/bit/bit.md)
-- [セグメント木](./data_stracture/segtree/segtree.md)
+- [セグメント木](./data_structure/segtree/segtree.md)
   - [遅延セグメント木](./data_structure/segtree/lazysegtree.md)
   - [Segment Tree Beats](./data_structure/segtree/segtreebeats.md)
 - 平衡二分探索木
