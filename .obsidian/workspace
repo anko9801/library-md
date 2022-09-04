@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "c0b42f921548b21f",
+        "id": "babd2a0e20d9bfd1",
         "type": "leaf",
         "state": {
           "type": "markdown",
@@ -87,17 +87,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "c0b42f921548b21f",
+  "active": "babd2a0e20d9bfd1",
   "lastOpenFiles": [
-    "crypto/sagemath.md",
+    "memo.md",
+    "Untitled.md",
     "README.md",
-    "rev/rev.md",
-    "rev/malware.md",
-    "rev/fuzzing.md",
-    "rev/detect_virtualization.md",
-    "rev/anti_debugging.md",
-    "pwn/TEE.md",
-    "crypto/SchnorrSignatures.md",
-    "pwn/pwn.md"
+    "cpu.md",
+    "other/rootkit.md",
+    "math/Field.md",
+    "crypto/RSA/ROCA.md",
+    "crypto/ECC/SSSA-Attack.md",
+    "crypto/ECC/PohligHellman.md",
+    "crypto/ECC/Millar.md"
   ]
 }
