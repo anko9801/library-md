@@ -7,15 +7,14 @@ layout: library
 
 ## 説明
 
-次の同型写像 $\lambda_E$ を用いて楕円曲線 $\tilde{E}(\mathbb{F}_p)$ 上の DLP が $\mathbb{F}_p$ 上の DLP、つまり割り算に帰結する。
-
 $\mathbb{Q}_p$, $\mathbb{Z}_p$ はそれぞれp進体、p進整数環とする。
+
+次の同型写像 $\lambda_E$ を用いて楕円曲線 $\tilde{E}(\mathbb{F}_p)$ 上が $\mathbb{F}_p$ 上の DLP、つまり $\bmod p$ の割り算に帰結する。
 
 $$
 \lambda_E \colon \tilde{E}(\mathbb{F}_p) \overset{u}{\to} E(\mathbb{Q}_p)\xrightarrow{p倍}\ker\pi \xrightarrow{\mathscr{L}} p\mathbb{Z}_p\xrightarrow{\bmod p^2}p\mathbb{Z}_p/p^2 \mathbb{Z}_p\simeq \mathbb{F}_p
 $$
 
-### 準同型証明
 
 
 ## 参考

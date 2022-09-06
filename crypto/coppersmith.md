@@ -111,6 +111,8 @@ $$
 
 これらをまとめてCoppersmith Methodと呼びます。
 
+Berlekamp-Zassenhause法
+
 ## 実装
 
 ## 使用例

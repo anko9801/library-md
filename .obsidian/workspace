@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "README.md",
+            "file": "crypto/SSH.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "crypto/SSH.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "babd2a0e20d9bfd1",
   "lastOpenFiles": [
-    "heuristic/heuristic.md",
+    "crypto/sagemath.md",
+    "crypto/cryptography/other.md",
+    "crypto/cryptography/ZeroKnowledgeProof.md",
+    "crypto/SSH.md",
+    "crypto/cryptography/AttackModel.md",
+    "crypto/cryptography/Fujisaki-Okamoto_Transformation.md",
+    "crypto/coppersmith.md",
+    "crypto/cryptography/Schnorr.md",
     "README.md",
-    "template/template.md",
-    "snippets/hill-climbing.md",
-    "crypto/ECC/Pohlig-Hellman.md",
-    "crypto/RSA/LSB-DecryptionOracleAttack.md",
-    "crypto/RSA/HåstadsBroadcastAttack.md",
-    "crypto/DLP/Pohlig_Hellman.md",
-    "crypto/DLP/BSGS.md",
-    "crypto/schnorr.md"
+    "crypto/cryptography/Diffie-Hellman.md"
   ]
 }

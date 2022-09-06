@@ -137,9 +137,9 @@ CTFのライブラリ/知識集らしいです。(現在はLYTに近い思想で
 使用言語はPythonまたはSageMathです。それぞれの暗号自体を取り扱うのではなく、Cryptoの背景にある理論を取り扱っていきます。
 
 - 暗号構成基盤
-  - [Diffie-Hellman 鍵交換](./crypto/Diffie-Hellman.md)
+  - [Diffie-Hellman 鍵交換](Diffie-Hellman.md)
   - Fiat-Shamir 変換
-    - [Schnorr 署名](./crypto/schnorr.md)
+    - [Schnorr 署名](Schnorr.md)
     - Frozen Heart
   - Lamport 署名
   - ゼロ知識証明

@@ -5,13 +5,13 @@ writer: anko9801
 layout: library
 ---
 
+Copy on Write
+[An Overview of Query Optimization in Relational Systems 論文紹介 - Google スライド](https://docs.google.com/presentation/d/1ruGYLRLeagkfv1gQBlmh_di7AviaSx0MJih4oH24AsY/edit#slide=id.p)
+
 # ISUCONメモ
 
 https://github.com/FujishigeTemma/isucon9-qualify/blob/master/go/main.go
 https://github.com/tohutohu/isucon9/blob/master/webapp/go/main.go
-
-https://wiki.trap.jp/user/Azon/memo/ISUCON%E3%83%81%E3%83%BC%E3%83%88%E3%82%B7%E3%83%BC%E3%83%88v2020
-https://wiki.trap.jp/user/Azon/memo/ISUCON%E3%83%81%E3%83%BC%E3%83%88%E3%82%B7%E3%83%BC%E3%83%88v2021
 
 https://www.youtube.com/watch?v=0DhBLswwcRs
 

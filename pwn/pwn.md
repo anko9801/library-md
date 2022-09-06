@@ -19,3 +19,7 @@ CTFのpwn分野で使うテンプレート。pwntoolsパッケージを使用す
 $ python3 solve.py
 $ python3 solve.py localhost 3000
 ```
+
+## 参考文献
+[shellphish/how2heap: A repository for learning various heap exploitation techniques. (github.com)](https://github.com/shellphish/how2heap)
+[Exploiting Intel Graphics Kernel Extensions on macOS | RET2 Systems Blog](https://blog.ret2.io/2022/06/29/pwn2own-2021-safari-sandbox-intel-graphics-exploit/)
