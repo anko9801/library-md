@@ -17,6 +17,8 @@ layout: library
 
 ほぼほぼ暗号化処理をするため秘密鍵をそこにppm
 
+須崎先生
+
 - [woot22-preprint.pdf (tuwien.ac.at)](https://security.inso.tuwien.ac.at/pdfs/woot22-preprint.pdf)
 - [IAIK/AEPIC (github.com)](https://github.com/IAIK/AEPIC)
 - [SoK: Understanding the Prevailing Security Vulnerabilities in TrustZone-assisted TEE Systems | IEEE Conference Publication | IEEE Xplore](https://ieeexplore.ieee.org/document/9152801)

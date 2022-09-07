@@ -14,9 +14,14 @@ System V AMD64
 CPU
 GPU
 TPU 行列積演算
+FPU
 
 LGA
 BGA
 QFP
 
 RP2040
+
+Qualcomm Snapdragon 6 Gen 1
+
+富岳

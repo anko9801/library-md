@@ -3,8 +3,23 @@ ptrace
 gdb
 - gdb-peda
 - pwndbg
-
 - rust-gdb
+
+- Ghidra
+- IDA Pro
+- Binary Ninja
+- Immunity Debugger
+- WinDbg
+- radare2
+
+GhidraよりIDA Pro(アイダ)の方が使われる
+
+DWARF
+gdbの自動的にやることでカバレッジを取れる
+seccomp BPF
+
+Vim/NeoVim
+termdebug
 
 - Visual Studio Code
 - CLion

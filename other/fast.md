@@ -5,8 +5,13 @@ writer: anko9801
 layout: library
 ---
 
+
+Cache
+
 Copy on Write
 [An Overview of Query Optimization in Relational Systems 論文紹介 - Google スライド](https://docs.google.com/presentation/d/1ruGYLRLeagkfv1gQBlmh_di7AviaSx0MJih4oH24AsY/edit#slide=id.p)
+
+O/R Mapper
 
 # ISUCONメモ
 

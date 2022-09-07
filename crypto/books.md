@@ -45,6 +45,7 @@ The Block Cipher Companion
 The Arithmetic of Elliptic Curves (著: Silverman)
 [kojima-shuron.pdf (kyoto-u.ac.jp)](https://www.math.kyoto-u.ac.jp/~yukie/kojima-shuron.pdf)
 
+
 ## Security
 [Flatt Security Blog](https://blog.flatt.tech/)
 
@@ -59,8 +60,15 @@ The Arithmetic of Elliptic Curves (著: Silverman)
 
 ## Event
 1月 SCIS (Symposium on Cryptography and Information Security)
-8月 DEFCON
+8月 DEFCON AVTOKYO
 
 ## Crypto Paper
 [Breaking SIDH in polynomial time (iacr.org)](https://eprint.iacr.org/2022/1038)
 
+## Certification
+eJPT Certification
+CISSP
+OSCP
+OSED
+
+INE Cyber Security Training

@@ -11,6 +11,7 @@ layout: library
 
 Concolic Execution
 SSA形式とCFGが対応する
+Taint 解析
 
 ## 計算量
 

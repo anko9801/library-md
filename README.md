@@ -306,7 +306,7 @@ Webに関してはよわよわなので読み込むと良いかもしれない�
 
 ## テンプレート
 
-- [競プロ](./template/template.md)
+- [競プロ](template.md)
 - [ヒューリスティック](./heuristic/heuristic.md)
 - [pwn](./pwn/pwn.md)
 - [Kernel exploit](./pwn/kernel_exploit.md)
