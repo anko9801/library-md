@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "crypto/Note.md",
+            "file": "crypto/ECC/SSSA-Attack.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "crypto/Note.md",
+                "file": "crypto/ECC/SSSA-Attack.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "044e0b1bdf418545",
   "lastOpenFiles": [
-    "crypto/homomorphism.md",
-    "crypto/Note.md",
-    "crypto/sagemath.md",
-    "crypto/ECC/ECC.md",
-    "crypto/coppersmith.md",
-    "crypto/SSH.md",
-    "crypto/Lattice/LLL.md",
-    "crypto/Lattice/size_reduction.md",
-    "crypto/Lattice/TFHE.md",
-    "crypto/Lattice/tour of Lattice.md"
+    "crypto/ECC/Schoof.md",
+    "other/Processor.md",
+    "other/SAT-SMT/SMT.md",
+    "crypto/ECC/Invalid-Curve-Attack.md",
+    "crypto/ECC/Pohlig-Hellman.md",
+    "crypto/ECC/Millar.md",
+    "crypto/ECC/GHS-Attack.md",
+    "crypto/ECC/ECFFT.md",
+    "crypto/ECC/MOV-FR-Reduction.md",
+    "crypto/ECC/Weil-descent.md"
   ]
 }

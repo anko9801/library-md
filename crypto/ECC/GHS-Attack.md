@@ -1,0 +1,1 @@
+Weil descent 攻撃とも呼ばれる
