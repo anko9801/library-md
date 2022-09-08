@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "crypto/RSA/tour of RSA.md",
+            "file": "crypto/Note.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "crypto/RSA/tour of RSA.md",
+                "file": "crypto/Note.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "044e0b1bdf418545",
   "lastOpenFiles": [
-    "crypto/ECC/Pohlig-Hellman.md",
-    "crypto/ECC/Weil-descent.md",
-    "crypto/ECC/SSSA-Attack.md",
-    "crypto/ECC/Millar.md",
-    "crypto/ECC/GHS-Attack.md",
-    "crypto/ECC/FR-Reduction.md",
-    "crypto/ECC/ECFFT.md",
-    "crypto/ECC/Invalid-Curve-Attack.md",
+    "crypto/homomorphism.md",
+    "crypto/Note.md",
+    "crypto/sagemath.md",
     "crypto/ECC/ECC.md",
-    "crypto/coppersmith.md"
+    "crypto/coppersmith.md",
+    "crypto/SSH.md",
+    "crypto/Lattice/LLL.md",
+    "crypto/Lattice/size_reduction.md",
+    "crypto/Lattice/TFHE.md",
+    "crypto/Lattice/tour of Lattice.md"
   ]
 }
