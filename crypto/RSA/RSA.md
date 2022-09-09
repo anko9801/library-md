@@ -73,6 +73,15 @@ q_{inv} &= q^{-1} \bmod p \\
 \end{aligned}
 $$
 
+### padding
+メッセージが改ざんされずに届けられていることを確認するのにパディングは用いられる。RSAでは主に次の3つのパディングが使われる。
+
+- PKCS#1 v1.5
+- OAEP
+- PSS
+
+このようなパディングを用いたRSAをRSA-[パディング名]などと呼んだりする。
+
 ## 実装
 
 {% include python.html code="crypto/RSA/rsa.py" %}

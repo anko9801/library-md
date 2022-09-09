@@ -13,15 +13,26 @@ System V AMD64
 
 CPU
 GPU
+- iGPU(internal) CPU内にあるグラボ
+- dGPU(discrete) NVMe/SATA/PCIeなどで接続する外付けのグラボ
+- eGPU(external) Thunderbolt 3/4などで接続する外付けのグラボ
 TPU 行列積演算
 FPU
+
+CrystalDisk
+CrystalDiskMark
+
+GPGPU
 
 LGA
 BGA
 QFP
+
+ALU
 
 RP2040
 
 Qualcomm Snapdragon 6 Gen 1
 
 富岳
+OS IHK/McKernel
