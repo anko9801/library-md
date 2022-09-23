@@ -76,9 +76,11 @@ $$
 ### padding
 メッセージが改ざんされずに届けられていることを確認するのにパディングは用いられる。RSAでは主に次の3つのパディングが使われる。
 
-- PKCS#1 v1.5
-- OAEP
-- PSS
+RFC 8017: PKCS #1 V2.2(RSA Cryptography Specifications Version 2.2)
+
+- PKCS#1 v1.5; Public-Key Cryptography Standards#1 v1.5
+- OAEP; Optimal Asymmetric Encryption Padding
+- PSS; Probabilistic Signature Scheme
 
 このようなパディングを用いたRSAをRSA-[パディング名]などと呼んだりする。
 

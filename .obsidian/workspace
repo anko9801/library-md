@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "044e0b1bdf418545",
+        "id": "f686f98300498fe5",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "crypto/RSA/RSA.md",
+            "file": "math/体論.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "crypto/RSA/RSA.md",
+                "file": "math/体論.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -87,17 +87,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "044e0b1bdf418545",
+  "active": "f686f98300498fe5",
   "lastOpenFiles": [
-    "other/TEE.md",
-    "data_structure/slope_trick.md",
-    "data_structure/unionfind/potential_unionfind.md",
-    "data_structure/unionfind/unionfind.md",
-    "data_structure/unionfind/persist_unionfind.md",
-    "other/Malware.md",
-    "other/Processor.md",
-    "crypto/ECC/ECC.md",
-    "crypto/ECC/Invalid-Curve-Attack.md",
-    "other/Language.md"
+    "other/Application/Processor.md",
+    "other/Application/OS.md",
+    "other/Application/Hypervisor.md",
+    "other/Application/Malware.md",
+    "other/Application/fast.md",
+    "other/Application/DeepLearning.md",
+    "other/Application/Container.md",
+    "other/Application/Blockchain.md",
+    "other/Application/Browser.md",
+    "other/Application/toolchain.md"
   ]
 }

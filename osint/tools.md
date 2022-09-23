@@ -18,7 +18,7 @@ twitter [https://twilog.org twilog]
 	- [VirusTotal](https://virustotal.com/)
 - Tor onionアドレス
 - [OSINT Framework](https://osintframework.com/)
-- Project Owl
+- [SunCalc - sun position, sunlight phases, sunrise, sunset, dusk and dawn times calculator](http://suncalc.net/#/51.508,-0.125,2/2022.08.08/17:00)
 
 ## 参考文献
 [普段の調査で利用するOSINTまとめ](https://qiita.com/00001B1A/items/4d8ceb53993d3217307e)

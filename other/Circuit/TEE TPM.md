@@ -12,13 +12,14 @@ Normal Mode Secure Mode
 - ARM TrustZone
 - RISC-V Keystone
 
-[Trusted Platform Module: TPM](https://trustedcomputinggroup.org/resource/tpm-library-specification/)
+Trusted Platform Module: TPM
+[規格](https://trustedcomputinggroup.org/resource/tpm-library-specification/)
 
 - OSやアプリケーションの改竄を検知
 - 公開鍵証明書による端末識別，認証
 - ストレージデータの安全な暗号化
 
-
+TEE CPUの機能
 - Intel SGX
 	- Remote Attestation
 	- ForeShadow
@@ -27,7 +28,8 @@ Normal Mode Secure Mode
 - RISC-V Keystone
 	- BOOM
 	- Speculative Attack
-TPM
+TPM (Trust) ハードウェアとして開発
+- Windows BitLocker
 - [A Bad Dream](https://www.usenix.org/system/files/conference/usenixsecurity18/sec18-han.pdf)
 
 ほぼほぼ暗号化処理をするため秘密鍵をそこにppm

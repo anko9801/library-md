@@ -47,7 +47,8 @@ The Arithmetic of Elliptic Curves (著: Silverman)
 
 
 ## Security
-[Flatt Security Blog](https://blog.flatt.tech/)
+- [Flatt Security Blog](https://blog.flatt.tech/)
+- [RET2 Systems Blog](https://blog.ret2.io/)
 
 ## Mathematics books
 初学者のための代数幾何 (著: 永田雅宜)
@@ -61,6 +62,9 @@ The Arithmetic of Elliptic Curves (著: Silverman)
 ## Event
 1月 SCIS (Symposium on Cryptography and Information Security)
 8月 DEFCON AVTOKYO
+CODE BLUE
+GCC
+SecHack365
 
 ## Crypto Paper
 [Breaking SIDH in polynomial time (iacr.org)](https://eprint.iacr.org/2022/1038)

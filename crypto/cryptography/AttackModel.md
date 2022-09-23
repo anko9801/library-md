@@ -6,12 +6,16 @@
 - 適応的選択暗号文攻撃(Adaptive Chosen-ciphertext attack; CCA2)
 - Side-channel attack
 
+↓めちゃくちゃわかりにくい、といってわかりやすさが上がる方法とは？定理証明だと思う.
 
 - 一方向性(Onewayness; OW)
 	- 暗号文から平文を求めるのが困難
-- 強秘匿性(; SS)
+- 強秘匿性(Semantic Security; SS)
 	- 暗号文から平文のどんな部分情報も漏れない
 - 識別不可能性(Indistinguishability; IND)
 	- 暗号文が平文AとBのどちらのものかを区別できない
 - 頑強性(Non-Malleability; NM)
 	- 暗号文が与えられた時、ある関係性を持った別の暗号文の生成が不可
+	- stream cipher
+	- RSA暗号 $Enc(m)\cdot t^e \bmod n = Enc(mt)$ padding(OAEP, PKCS 1)
+
