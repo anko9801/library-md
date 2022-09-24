@@ -45,6 +45,9 @@ The Block Cipher Companion
 The Arithmetic of Elliptic Curves (著: Silverman)
 [kojima-shuron.pdf (kyoto-u.ac.jp)](https://www.math.kyoto-u.ac.jp/~yukie/kojima-shuron.pdf)
 
+[Mathematics of Public Key Cryptography (auckland.ac.nz)](https://www.math.auckland.ac.nz/~sgal018/crypto-book/crypto-book.html)
+[CRYSTALS - Kyber](https://eprint.iacr.org/2017/634.pdf)
+[Meet The Signature Standard of the Future … SPHINCS+ | by Prof Bill Buchanan OBE | ASecuritySite: When Bob Met Alice | Medium](https://medium.com/asecuritysite-when-bob-met-alice/meet-the-standard-of-the-future-sphincs-ee2b9e4c7b5e)
 
 ## Security
 - [Flatt Security Blog](https://blog.flatt.tech/)

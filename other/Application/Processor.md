@@ -17,8 +17,22 @@ Write
 
 big.LITTLE processing
 
+Deep Learning を用いた回路設計も行われている.
+[Designing Arithmetic Circuits with Deep Reinforcement Learning | NVIDIA Technical Blog](https://developer.nvidia.com/blog/designing-arithmetic-circuits-with-deep-reinforcement-learning/)
+
+## Intel SGX
+[Intel SGX入門 - SGX基礎知識編 - Qiita](https://qiita.com/Cliffford/items/2f155f40a1c3eec288cf)
+
+
 ## 脆弱性
 [Project Circuit Breaker](https://www.projectcircuitbreaker.com/)
+
+### AEPIC Leak
+最初のアーキテクチャ由来のCPUのバグ. インテル製10~12世代のCPUの脆弱性を利用して, プロセッサ本体から機密情報を漏洩させる。APIC MMIOでの未定義範囲のアクセスによりキャッシュ階層から古いデータを参照できる。APIC MMIOのアクセスには管理者権限が必要であるから安全であるが, Intel SGXのような管理者権限を持つ攻撃者からデータを守るようなシステムはリスクとなる。
+未初期化メモリの読み取りのようなもの
+
+[元論文](https://aepicleak.com/aepicleak.pdf)
+https://github.com/IAIK/AEPIC
 ## Spectre
 
 ### Description
@@ -82,3 +96,4 @@ Integer Underflow ([CWE-191](https://cwe.mitre.org/data/definitions/191.html)) �
 Floating Point Underflow   [x + 0.25 - 0.25 = xが成り立たないxとは何か｜Rui Ueyama｜note](https://note.com/ruiu/n/ndd60f403e8f2)
 Stack Overflow
 Stack Underflow
+

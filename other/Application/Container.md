@@ -6,3 +6,6 @@
 [Security Camp B6 (notion.site)](https://mrtc0.notion.site/Security-Camp-B6-81eb740553154a70aeef92f3455717bf)
 
 [Dockerセキュリティベストプラクティス トップ20：究極ガイド #aqua #コンテナ #セキュリティ #ベストプラクティス - クリエーションライン株式会社 (creationline.com)](https://www.creationline.com/lab/aquasecurity/43087)
+
+["><s>はい</s> (ssrf.in)](https://blog.ssrf.in/)
+[open_by_handle_at(2) でコンテナから Break Out する (ssrf.in)](https://blog.ssrf.in/post/escape-container-with-open-by-handle-at/)
