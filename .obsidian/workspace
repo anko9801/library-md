@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "other/Application/Browser.md",
+            "file": "other/Application/Programming.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "other/Application/Browser.md",
+                "file": "other/Application/Programming.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "efe85d2ab044f440",
   "lastOpenFiles": [
-    "other/Application/Programming.md",
     "other/Application/Processor.md",
+    "other/Application/Type.md",
     "other/Application/OS.md",
-    "other/Application/Network/SDR.md",
+    "other/Application/Programming.md",
     "other/Application/Network/ネットワーク.md",
-    "other/Application/Server/AWS.md",
-    "other/Application/Rendering/RayTracing.md",
-    "other/Application/Rendering/GLSL 1.md",
-    "other/Application/Rendering/Rendering.md",
-    "other/Application/Rendering/Shader.md"
+    "data_structure/LinkedList.md",
+    "web/Browser.md",
+    "web/PrototypePollution.md",
+    "crypto/ECC/ECC.md",
+    "crypto/ECC/ECFFT.md"
   ]
 }

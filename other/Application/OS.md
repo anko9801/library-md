@@ -1,6 +1,8 @@
 PXE(Preboot eXecution Environment) Boot
 
-UEFI
+### BIOS (Basic Input Output System)
+UEFI (Unified Extensible Firmware Interface)
+
 ## タスク
 ジョブ、プロセス、スレッド
 
