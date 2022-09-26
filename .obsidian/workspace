@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "other/Application/DeepLearning.md",
+            "file": "math/環論.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "other/Application/DeepLearning.md",
+                "file": "math/環論.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "63e14eb38cbf79a7",
   "lastOpenFiles": [
-    "other/Application/OS.md",
-    "other/Application/DeepLearning.md",
-    "other/Application/Hypervisor.md",
+    "math/体論.md",
+    "math/環論.md",
+    "math/圏論.md",
+    "math/解析力学.md",
+    "math/量子力学.md",
     "other/Application/Processor.md",
-    "other/Idea.md",
-    "web/security.md",
-    "web/Browser.md",
-    "other/Application/Type.md",
-    "other/Application/Server/ReverseProxy.md",
-    "other/Application/Server/fast.md"
+    "other/Application/DeepLearning.md",
+    "other/Application/OS.md",
+    "other/Application/Hypervisor.md",
+    "other/Idea.md"
   ]
 }
