@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "efe85d2ab044f440",
+        "id": "63e14eb38cbf79a7",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "other/Application/Programming.md",
+            "file": "other/Application/DeepLearning.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "other/Application/Programming.md",
+                "file": "other/Application/DeepLearning.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -87,17 +87,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "efe85d2ab044f440",
+  "active": "63e14eb38cbf79a7",
   "lastOpenFiles": [
-    "other/Application/Processor.md",
-    "other/Application/Type.md",
     "other/Application/OS.md",
-    "other/Application/Programming.md",
-    "other/Application/Network/ネットワーク.md",
-    "data_structure/LinkedList.md",
+    "other/Application/DeepLearning.md",
+    "other/Application/Hypervisor.md",
+    "other/Application/Processor.md",
+    "other/Idea.md",
+    "web/security.md",
     "web/Browser.md",
-    "web/PrototypePollution.md",
-    "crypto/ECC/ECC.md",
-    "crypto/ECC/ECFFT.md"
+    "other/Application/Type.md",
+    "other/Application/Server/ReverseProxy.md",
+    "other/Application/Server/fast.md"
   ]
 }

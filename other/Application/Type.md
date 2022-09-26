@@ -1,9 +1,5 @@
 # 型理論
 
-Martin-Lof 型理論
-Homotopy 型理論
-Cubical 型理論
-
 型はグロタンディーク宇宙の中であることを断っておく。
 
 ### 論理
@@ -40,7 +36,6 @@ Cubical 型理論
 サブタイプ
 - $\lambda C$: Culculus of Constructions
 
-
 ### Curry-Howard 同型対応
 |論理|プログラム|
 |---|---|
@@ -62,5 +57,7 @@ Cubical 型理論
 GATsはデータコンストラクタによって型を柔軟に指定出来る機能です。
 call/cc
 
-今はあんまり興味がなくなってHoTTについて勉強できてない
-
+## 型理論
+Martin-Lof 型理論
+Homotopy 型理論
+Cubical 型理論

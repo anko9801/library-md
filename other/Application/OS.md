@@ -1,7 +1,13 @@
 PXE(Preboot eXecution Environment) Boot
 
-### BIOS (Basic Input Output System)
-UEFI (Unified Extensible Firmware Interface)
+### Basic Input/Output System: BIOS
+
+- ハードウェアの初期化
+- OS や bootloader へのサービスの提供
+
+### Unified Extensible Firmware Interface: UEFI
+
+## 割り込みの仕組みを知りたい
 
 ## タスク
 ジョブ、プロセス、スレッド
