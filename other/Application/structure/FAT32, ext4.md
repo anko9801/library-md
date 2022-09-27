@@ -1,6 +1,11 @@
 ファイルシステム VFS
 - File Allocation Table (FAT)
+- FAT32
+- NTFS
+- ExFAT
 
+
+## FAT32
 FAT とは Microsoft によって開発されたいくつかのファイルシステム(FAT12, FAT16, FAT32, VFAT, exFAT)の総称です。
 
 ここでは実装より仕組みの理解を優先した書き方をするので実装する方は規格などを読んでください。TODO: 規格のURL
