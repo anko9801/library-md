@@ -83,6 +83,7 @@ https://www.kernel.org/doc/html/latest/admin-guide/hw-vuln/tsx_async_abort.html
 
 ## TEE
 Trusted Execution Environment: TEE とはプロセッサ上に隔離された実行環境を用意することでセキュリティを高める技術です。
+より広義にHIEE: Hardware-assisted Isolated Execution Environment
 Normal Mode Secure Mode
 - OSやアプリケーションの改竄を検知
 - 公開鍵証明書による端末識別，認証
@@ -100,15 +101,22 @@ android をdecrypt TEEを介さずに FBIでもできなかった
 [Bits, Please!: Extracting Qualcomm's KeyMaster Keys - Breaking Android Full Disk Encryption (bits-please.blogspot.com)](http://bits-please.blogspot.com/2016/06/extracting-qualcomms-keymaster-keys.html)
 
 ### Intel SGX
-
+本質とは？なぜ
+Enclaveを持つ
+Ring 3でしか動作しない, つまりsyscallが使えない
 
 ![[Pasted image 20220927024448.png]]
-
-- Remote Attestation
-- ForeShadow
-[Graphene-SGX](https://www.usenix.org/system/files/conference/atc17/atc17-tsai.pdf)
 [Intel SGX入門 - SGX基礎知識編 - Qiita](https://qiita.com/Cliffford/items/2f155f40a1c3eec288cf)
+[Graphene-SGX](https://www.usenix.org/system/files/conference/atc17/atc17-tsai.pdf)
 
+#### Remote Attestation
+Remote AttestationはECDH上でCPU
+[Intel SGX - Remote Attestation概説 - Qiita](https://qiita.com/Cliffford/items/095b1df450583b4803f2)
+
+#### Foreshadow
+CVE-2018-3615 - L1 Terminal Fault: SGX
+CVE-2018-3620 - L1 Terminal Fault: OS/SMM、CVE-2018-3646 - L1 Terminal Fault: VMM
+L1データキャッシュに存在するデータならなんでも読み取ることが可能
 
 #### AEPIC Leak
 最初のアーキテクチャ由来のCPUのバグ. インテル製10~12世代のCPUの脆弱性を利用して, プロセッサ本体から機密情報を漏洩させる。APIC MMIOでの未定義範囲のアクセスによりキャッシュ階層から古いデータを参照できる。APIC MMIOのアクセスには管理者権限が必要であるから安全であるが, Intel SGXのような管理者権限を持つ攻撃者からデータを守るようなシステムはリスクとなる。

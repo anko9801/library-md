@@ -11,6 +11,8 @@ $(a,b,c,d)=(t,f,f,t)$
 ### CDCL: Constrait-Driven Clause Learning
 
 ## SMT: Satisfiability Modulo Theories
+FOL: First-Order Logic
+HOL: Higher-Order Logic
 
 ### Bit Vectors
 

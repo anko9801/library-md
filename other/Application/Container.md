@@ -9,3 +9,5 @@
 
 ["><s>はい</s> (ssrf.in)](https://blog.ssrf.in/)
 [open_by_handle_at(2) でコンテナから Break Out する (ssrf.in)](https://blog.ssrf.in/post/escape-container-with-open-by-handle-at/)
+
+[実践入門 Kubernetesカスタムコントローラーへの道【委託】 - 達人出版会 (tatsu-zine.com)](https://tatsu-zine.com/books/kubernates-custom-controller)
