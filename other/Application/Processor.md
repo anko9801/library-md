@@ -103,7 +103,7 @@ android をdecrypt TEEを介さずに FBIでもできなかった
 ### Intel SGX
 本質とは？なぜ
 Enclaveを持つ
-Ring 3でしか動作しない, つまりsyscallが使えない
+Enclave では Ring 3 でしか動作しない, つまり syscall が使えない
 
 ![[Pasted image 20220927024448.png]]
 [Intel SGX入門 - SGX基礎知識編 - Qiita](https://qiita.com/Cliffford/items/2f155f40a1c3eec288cf)
@@ -126,6 +126,8 @@ L1データキャッシュに存在するデータならなんでも読み取る
 https://github.com/IAIK/AEPIC
 
 ### ARM TrustZone
+Cortex-A シリーズの拡張機能
+ノーマルワールドとセキュアワールドそれぞれに特権/非特権モード
 - [Boomerang](https://github.com/ucsb-seclab/boomerang/)
 - [TrustZone Rootkit](https://security.inso.tuwien.ac.at/pdfs/woot22-preprint.pdf)
 - [ARM TrustZone エクスプロイト入門 - Speaker Deck](https://speakerdeck.com/rkx1209/arm-trustzone-ekusupuroitoru-men)

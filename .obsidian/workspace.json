@@ -4,16 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "63e14eb38cbf79a7",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "crypto/SageMath.md",
-            "mode": "source",
-            "source": false
+        "id": "90bd78bc272d0c56",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "63e14eb38cbf79a7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "crypto/SageMath.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "5669f51c4d647058",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "science/math/体論.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        }
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -31,7 +50,9 @@
             "type": "leaf",
             "state": {
               "type": "file-explorer",
-              "state": {}
+              "state": {
+                "sortOrder": "alphabetical"
+              }
             }
           },
           {
@@ -69,7 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "crypto/SageMath.md",
+                "file": "science/math/体論.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -87,17 +108,20 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "63e14eb38cbf79a7",
+  "ribbon": {
+    "mostRecentAction": ""
+  },
+  "active": "5669f51c4d647058",
   "lastOpenFiles": [
-    "pwn/pwn.md",
     "science/math/圏論.md",
+    "science/math/数学基礎論.md",
+    "science/math/体論.md",
+    "science/math/環.md",
+    "science/math/群.md",
+    "science/phys/解析力学.md",
+    "crypto/SageMath.md",
+    "pwn/pwn.md",
     "science/数学まとめ.md",
-    "science/物理学まとめ.md",
-    "science/生物学.md",
-    "README.md",
-    "memo.md",
-    "web/security.md",
-    "pwn/AEG.md",
-    "pwn/dataStructure.md"
+    "science/物理学まとめ.md"
   ]
 }

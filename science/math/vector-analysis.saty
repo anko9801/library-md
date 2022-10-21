@@ -1,0 +1,153 @@
+@require: stdjareport
+% @require: stdjabook
+% @require: stdja
+@require: base/typeset/satysfi-it
+@require: math
+@require: proof
+@require: azmath/azmath
+@require: derive/derive
+@require: easytable/easytable
+@require: enumitem/enumitem
+@require: physics
+open EasyTableAlias
+open Derive
+open EnumitemAlias
+let-math \overwrite mf ma mb = ${#mf\sqbracket{#ma \mapsto #mb}}
+
+let theorem-scheme ctx ctxf category wordopt inner =
+  % let () = register-cross-reference (label ^ `:num`) s-num in
+  let ib-dfn =
+    read-inline (ctx |> StdJaReport.set-latin-font StdJaReport.font-latin-bold) {#category;}
+  in
+  let ib-word =
+    match wordopt with
+    | None       -> inline-nil
+    | Some(word) -> read-inline ctx {\ (#word;).}
+  in
+  let ib-inner = read-inline (ctxf ctx) inner in
+    % line-break true true (ctxf ctx)
+    %   (ib-dfn ++ ib-word ++ inline-skip (get-font-size ctx) ++ ib-inner ++ inline-fil)
+  let ib-parag = (ib-dfn ++ ib-word ++ inline-skip (get-font-size ctx) ++ ib-inner ++ inline-fil) in
+  form-paragraph ctx ib-parag
+
+let-block ctx +prop ?:wordopt ?:labelopt title inner =
+  theorem-scheme ctx (fun x -> x |> set-word-break-penalty 100000000000) title wordopt inner
+in
+
+% プリアンブル
+document(|
+  title = {ベクトル解析};
+  author = {anko9801};
+  show-title = true; show-toc = false;
+|)'<
+  +definition?:({Kronecker のデルタ}){
+    \align(${
+      || \delta_{ij} = \cases{
+        | 1 | : i = j
+        | 0 | : i \neq j
+        |}
+    |});
+  }
+  +definition?:({Levi-Civita テンソル}){
+    ${\epsilon_{ijk}} は ${1,-1,0} の値を取る. ${\epsilon_{xyz} = 1} であり, 任意の2つの添字の交換に対して符号を変え, また任意の2つの添字の値が等しければ ${0} となる.
+    \align(${
+      || \epsilon_{xyz} = \epsilon_{zxy} = \epsilon_{yzx} = -\epsilon_{xzy} = -\epsilon_{yxz} = -\epsilon_{zyx} = 1
+    |});
+  }
+  +definition?:({Einstein の縮約記法}){
+    同じ項で添字が重なる場合はその添字について和を取る.
+    \align(${
+      || A_iB_i = \sum_iA_iB_i
+    |});
+  }
+  +theorem{
+    ${\vb{A}\vdot\vb{B} = A_iB_i}
+  }
+  +proof{
+    \align(${
+      | \vb{A}\vdot\vb{B} |= A_xB_x + A_yB_y + A_zB_z
+      ||= A_iB_i
+    |});
+    よって示された.
+  }
+  +theorem{
+    ${\p{\vb{A}\cross\vb{B}}_i = \epsilon_{ijk}A_jB_k}
+  }
+  +proof{
+    \align(${
+      | \p{\vb{A}\cross\vb{B}}_i |= A_jB_k - A_kB_j
+      ||= \epsilon_{ijk}A_jB_k
+    |});
+    よって示された.
+  }
+  +definition{
+    ${\p{\grad{\vb{A}}}_i = \partial_iA_i}
+  }
+  +definition{
+    ${\div{\vb{A}} = \partial_iA_i}
+  }
+  +definition{
+    ${\p{\rot{\vb{A}}}_i = \epsilon_{ijk}\partial_jA_k}
+  }
+  +theorem{
+    \align(${
+      || \grad{\p{f+g}} = \grad{f} + \grad{g}
+      || \grad{\p{fg}} = f\grad{g} + g\grad{f}
+      || \grad{\p{\vb{A}\vdot\vb{B}}} = \vb{A}\cross\p{\rot{\vb{B}}} + \vb{B}\cross\p{\rot{\vb{A}}} + \p{\vb{A}\vdot\vbnabla}\vb{B} + \p{\vb{B}\vdot\vbnabla}\vb{A}
+      || \div{\p{\vb{A}+\vb{B}}} = \div{\vb{A}} + \div{\vb{B}}
+      || \div{\p{f\vb{A}}} = f\p{\div{\vb{A}}} + \vb{A}\vdot\p{\grad{f}}
+      || \div{\p{\vb{A}\cross\vb{B}}} = \vb{B}\vdot\p{\rot{\vb{A}}} - \vb{A}\vdot\p{\rot{\vb{B}}}
+      || \rot{\p{\vb{A}+\vb{B}}} = \rot{\vb{A}} + \rot{\vb{B}}
+      || \rot{\p{f\vb{A}}} = f\p{\rot{\vb{A}}} - \vb{A}\cross\p{\grad{f}}
+      || \rot{\p{\vb{A}\cross\vb{B}}} = \vb{A}\p{\div{\vb{B}}} - \vb{B}\p{\div{\vb{A}}} + \p{\vb{B}\vdot\vbnabla}\vb{A} - \p{\vb{A}\vdot\vbnabla}\vb{B}
+      || \div{\p{\rot{\vb{A}}}} = 0
+      || \rot{\p{\grad{f}}} = \vb{0}
+    |});
+  }
+  +proof{
+    上の3つの定理を用いてそれぞれの式を証明する. ベクトルのときは各要素について考える.
+    \align(${
+      | \p{\grad{\p{f+g}}}_i |= \partial_i\p{f+g} = \partial_i f + \partial_i g = \p{\grad{f} + \grad{g}}_i
+      | \p{\grad{\p{fg}}}_i |= \partial_i\p{fg} = f\partial_i g + g\partial_i f = \p{f\grad{g} + g\grad{f}}_i
+    |});
+    右辺を計算すると
+    \align(${
+      || \p{\vb{A}\cross\p{\rot{\vb{B}}} + \vb{B}\cross\p{\rot{\vb{A}}} + \p{\vb{A}\vdot\vbnabla}\vb{B} + \p{\vb{B}\vdot\vbnabla}\vb{A}}_i
+      |=| \epsilon_{ijk}A_j\epsilon_{klm}\partial_lB_m + \epsilon_{ijk}B_j\epsilon_{klm}\partial_lA_m + A_j\partial_jB_i + B_j\partial_jA_i
+      |=| \epsilon_{kij}\epsilon_{klm}\p{A_j\partial_lB_m + B_j\partial_lA_m} + \p{A_j\partial_jB_i + B_j\partial_jA_i}
+      |=| \p{\delta_{il}\delta_{jm} - \delta_{im}\delta_{jl}}\p{A_j\partial_lB_m + B_j\partial_lA_m} + \p{A_j\partial_jB_i + B_j\partial_jA_i}
+      |=| \p{A_j\partial_iB_j + B_j\partial_iA_j} - \p{A_j\partial_jB_i + B_j\partial_jA_i} + \p{A_j\partial_jB_i + B_j\partial_jA_i}
+      |=| \partial_i\p{A_jB_j}
+      |=| \p{\grad{\p{\vb{A}\vdot\vb{B}}}}_i
+    |});
+    \align(${
+      | \div{\p{\vb{A}+\vb{B}}} |= \partial_i\p{A_i + B_i} = \partial_i A_i + \partial_i B_i
+      ||= \div{\vb{A}}+\div{\vb{B}}
+      | \div{\p{f\vb{A}}} |= \partial_i\p{fA_i} = f\partial_iA_i + A_i\partial_if
+      ||= f\p{\div{\vb{A}}} + \vb{A}\vdot\p{\grad{f}}
+      | \div{\p{\vb{A}\cross\vb{B}}} |= \partial_i\p{\epsilon_{ijk}A_jB_k}
+      ||= \epsilon_{ijk}\p{B_k\partial_iA_j + A_j\partial_iB_k}
+      ||= B_k\epsilon_{kij}\partial_iA_j - A_j\epsilon_{jik}\partial_iB_k
+      ||= \vb{B}\vdot\p{\rot{\vb{A}}} - \vb{A}\vdot\p{\rot{\vb{B}}}
+      | \p{\rot{\p{\vb{A} + \vb{B}}}}_i |= \epsilon_{ijk}\partial_j\p{A_k + B_k}
+      ||= \epsilon_{ijk}\partial_jA_k + \epsilon_{ijk}\partial_jB_k
+      ||= \rot{\vb{A}} + \rot{\vb{B}}
+      | \p{\rot{\p{f\vb{A}}}}_i |= \epsilon_{ijk}\partial_j\p{fA_k}
+      ||= f\epsilon_{ijk}\partial_jA_k + \epsilon_{ijk}A_k\partial_jf
+      ||= f\epsilon_{ijk}\partial_jA_k - \epsilon_{ikj}A_k\partial_jf
+      ||= \p{f\p{\rot{\vb{A}}} - \vb{A}\cross\p{\grad{f}}}_i
+      | \rot{\p{\vb{A}\cross\vb{B}}} |= \epsilon_{ijk}\partial_j\epsilon_{klm}A_lB_m
+      ||= \epsilon_{kij}\epsilon_{klm}\p{B_m\partial_jA_l + A_l\partial_jB_m}
+      ||= \p{\delta_{il}\delta_{jm} - \delta_{im}\delta_{jl}}\p{B_m\partial_jA_l + A_l\partial_jB_m}
+      ||= \p{B_j\partial_jA_i + A_i\partial_jB_j} - \p{B_i\partial_jA_j + A_j\partial_jB_i}
+      ||= A_i\partial_jB_j - B_i\partial_jA_j + B_j\partial_jA_i - A_j\partial_jB_i
+      ||= \vb{A}\p{\div{\vb{B}}} + \vb{B}\p{\div{\vb{A}}} + \p{\vb{B}\vdot\vbnabla}\vb{A} - \p{\vb{A}\vdot\vbnabla}\vb{B}
+      | \div{\p{\rot{\vb{A}}}} |= \partial_i\p{\epsilon_{ijk}\partial_jA_k}
+      ||= \epsilon_{ijk}\partial_i\partial_jA_k
+      ||= 0
+      | \p{\rot{\p{\grad{f}}}}_i |= \epsilon_{ijk}\partial_j\partial_kf
+      ||= 0
+    |});
+    これより全て証明できた.
+  }
+>

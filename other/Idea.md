@@ -1,1 +1,1 @@
-version update時の確認不足
+version update時の確認不足で何かしらの悪意のあるプログラムを入れることができる

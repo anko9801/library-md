@@ -1,0 +1,296 @@
+@require: stdjareport
+% @require: stdjabook
+% @require: stdja
+@require: base/typeset/satysfi-it
+@require: math
+@require: proof
+@require: azmath/azmath
+@require: derive/derive
+@require: easytable/easytable
+@require: enumitem/enumitem
+@require: physics
+open EasyTableAlias
+open Derive
+open EnumitemAlias
+let-math \overwrite mf ma mb = ${#mf\sqbracket{#ma \mapsto #mb}}
+
+let generate-fresh-label =
+  let-mutable count <- 0 in
+    (fun () -> (
+      let () = count <- !count + 1 in
+        `generated:` ^ (arabic (!count))
+    ))
+
+let theorem-scheme ctx ctxf category wordopt inner =
+  % let () = register-cross-reference (label ^ `:num`) s-num in
+  let ib-dfn =
+    read-inline (ctx |> StdJaReport.set-latin-font StdJaReport.font-latin-bold) {#category;}
+  in
+  let ib-word =
+    match wordopt with
+    | None       -> inline-nil
+    | Some(word) -> read-inline ctx {\ (#word;).}
+  in
+  let ib-inner = read-inline (ctxf ctx) inner in
+    % line-break true true (ctxf ctx)
+    %   (ib-dfn ++ ib-word ++ inline-skip (get-font-size ctx) ++ ib-inner ++ inline-fil)
+  let ib-parag = (ib-dfn ++ ib-word ++ inline-skip (get-font-size ctx) ++ ib-inner ++ inline-fil) in
+  form-paragraph ctx ib-parag
+
+let-block ctx +prop ?:wordopt ?:labelopt title inner =
+  theorem-scheme ctx (fun x -> x |> set-word-break-penalty 100000000000) title wordopt inner
+
+  let font-ratio-latin = 1.
+  let font-ratio-cjk = 0.88
+  % let quad-indent ctx =
+  %   inline-skip (get-font-size ctx *' font-ratio-cjk)
+  % let-block ctx +p inner =
+  %   let ib-inner = read-inline ctx inner in
+  %   let ib-parag = (quad-indent ctx) ++ ib-inner ++ inline-fil in
+  %     form-paragraph ctx ib-parag
+  % let set-latin-font font ctx =
+  %   ctx |> set-font Latin font
+  % let font-latin-italic = (`Junicode-it`, font-ratio-latin, 0.)
+  % let-block ctx +proof ?:wordopt inner =
+  %   let ib-heading =
+  %     let ctx = ctx |> set-latin-font font-latin-italic in
+  %       match wordopt with
+  %       | None    -> read-inline ctx {Proof.}
+  %       | Some(w) -> read-inline ctx {Proof of #w;.}
+  %   in
+  %   let ib-box = read-inline ctx {▪} in
+  %   let ib-parag = ib-heading ++ inline-skip (get-font-size ctx) ++ read-inline ctx inner ++ inline-fil ++ ib-box in
+  %   form-paragraph ctx ib-parag
+
+
+in
+
+% プリアンブル
+document(|
+    title = {数学基礎論ノート};
+    author = {anko9801};
+    show-title = true; show-toc = false;
+|)'<
+  +chapter{公理的集合論}<
+    +section ?:(`sec:typesetting`) {論理}<
+      +subsection{論理式}<
+        % +p {
+        %   論理記号
+        % }
+        % +p {
+        %   \easytable?:[v 1; h 1; rect;][c;c;c;c;c;c;c;]{
+        %     | 記号 | ${\land} | ${\lor} | ${\to} | ${\bot} | ${\forall} | ${\exists}
+        %     | 意味 | かつ | または | ならば | 矛盾 | 任意 | 存在
+        %     |}
+        % }
+        % +p {
+        %   等号・数論記号
+        % }
+        % +p {
+        %   \easytable?:[v 1; h 1; rect;][c;c;c;c;c;c;]{
+        %     | 記号 | ${=} | ${0} | ${S} | ${+} | ${\cdot}
+        %     | 意味 | 等号 | ゼロ | 後続者 | 和 | 積
+        %     |}
+        % }
+        % +p {
+        %   束縛変数・自由変数
+        %   束縛変数: 量化子により束縛されている変数
+        %   自由変数: 束縛変数でない変数
+
+        %   ある環境 ${\Gamma} において文 ${A} が真であることを ${\Gamma\vDash A} と書く.
+        % }
+      >
+      +subsection{ZFC 公理系}<
+        +prop{Axiom 1 (外延性).}{${\forall x\forall y(\forall z(z\in x\longleftrightarrow z\in y)\longrightarrow x=y)}}
+        +prop{Axiom 3 (内包性図式).}{変数 ${y} を自由変数として用いない任意の論理式 ${\phi} を用いて次のように表せられる. ${\exists y\forall x(x\in y\longleftrightarrow x\in z\land \phi)}. つまり ${\pb{x\in z:\phi}} は存在する.}
+        +theorem{${\exists y\forall x(x\nin y)}}
+        +proof{内包性より ${\pb{x\in z: x\neq x}} が存在, つまり ${\exists y\forall x(x\in y\longleftrightarrow x\in z\land x\neq x)}}
+        +p {上の集合 ${y} を空集合 ${0} と呼ぶ. 多分これは真のクラスも含まれる.}
+        +theorem{${\lnot\exists z\forall x(x\in z)}}
+        +proof{${\forall x(x\in z)} となる ${z} が存在すると仮定すると, 内包性より ${\pb{x\in z: x\nin x} = \pb{x: x\nin x}} が存在, つまり ${\exists y\forall x(x\in y\longleftrightarrow x\nin x)} となる. しかし ${x} に ${y} を代入することで ${y\in y\longleftrightarrow y\nin y}. よって矛盾.}
+        +prop{Axiom 4 (対).}{${\forall x\forall y\exists z(x\in z\land y\in z)}}
+        +prop{Axiom 5 (和集合).}{${\forall\mathcal{F}\exists A\forall Y\forall x(x\in Y\land Y\in\mathcal{F}\to x\in A)}}
+        +prop{Axiom 6 (置換図式).}{${\forall x\in A\exists\!y\phi(x,y)\to\exists Y\forall x\in A\exists y\in Y\phi(x,y)}}
+        +definition?:({順序対}){${\pangle{x, y}\coloneq\pb{\pb{x}, \pb{x,y}}}}
+        +definition?:({和集合}){${\bigcup\mathcal{F}\coloneq\pb{x:\exists Y\in\mathcal{F}(x\in Y)}}}
+        +definition?:({共通部分}){${\bigcap\mathcal{F}\coloneq\pb{x:\forall Y\in\mathcal{F}(x\in Y)}}}
+        +definition?:({直積集合}){${A\times B\coloneq\pb{\pangle{x,y}:x\in A\land y\in B}}}
+        +proof{置換公理と内包性公理より, 各 ${y\in B} に対し,
+          \align(${
+            || \forall x\in A\exists\!z\p{z=\pangle{x,y}}
+            || \mathrm{prod}(A,y) \coloneq \pb{z:\exists x\in A(z=\pangle{x, y})}
+          |});
+          また, 次のように定義できる.
+          \align(${
+            || \forall y\in B\exists\!z\p{z=\mathrm{prod}\p{A,y}}
+            || \mathrm{prod}'(A,B) \coloneq \pb{\mathrm{prod}\p{A,y}: y\in B}
+          |});
+          ${A\times B\coloneq\bigcup\mathrm{prod}'(A, B)} と置くことで定義の正当性が分かる.
+        }
+        +definition?:({関係}){任意の要素が順序対となる集合.}
+        +definition?:({定義域, 値域}){関係 ${R} に対し, 定義域 ${\mathrm{dom}(R)} と値域 ${\mathrm{ran}(R)} は次のように定義する.
+          \align(${
+            | \mathrm{dom}(R) |= \pb{x:\exists y\p{\pangle{x,y}\in R}}
+            | \mathrm{ran}(R) |= \pb{y:\exists x\p{\pangle{x,y}\in R}}
+          |});
+        }
+        +definition?:({関数}){
+          関係 ${f} が ${\forall x\in\mathrm{dom}(f),\exists\!y\in\mathrm{ran}(f)\p{\pangle{x,y}\in f}} を満たすとき ${f} を関数と呼ぶ. また, 関数 ${f} について ${A=\mathrm{dom}(f), B\supset\mathrm{ran}(f)} を満たすとき, ${f:A\to B} と書く.
+        }
+        +definition?:({関数の制限}){
+        }
+        +definition?:({狭義全順序}){
+          集合 ${A} 関係 ${R} に対し, 次を満たす組 ${\pangle{A, R}} を狭義全順序と呼ぶ.
+          \align(${
+            | \text!{推移律}\quad | \forall x,y,z\in A(xRy\land yRz\to xRz)
+            | \text!{三分律}\quad | \forall x, y\in A(x=y\lor xRy\lor yRx)
+            | \text!{非反射律}\quad | \forall x\in A\p{\lnot\p{xRx}}
+          |});
+        }
+        +theorem{${\pangle{A, R}} が狭義全順序ならば, 任意の ${B\subset A} について ${\pangle{B, R}} は狭義全順序となる.}
+        +definition?:({同型写像}){
+          集合と関係の対 ${\pangle{A, R}, \pangle{B, S}} について
+          全単射 ${f:A\to B} が存在し ${\forall x,y\in A(xRy\longleftrightarrow f(x)Sf(y))} となるとき ${\pangle{A,R}\cong\pangle{B,S}} と書き, ${f} を同型写像と呼ぶ.
+        }
+        +definition?:({整列順序}){
+          全順序 ${\pangle{A,R}} について ${A} の空でない任意の部分集合に必ず ${R}-最小の要素があるとき, ${\pangle{A,R}} が整列順序であるという.
+        }
+        +definition?:({切片}){${\mathrm{pred}(A,x,R)\coloneq\pb{y\in A:yRx}}}
+        +theorem{
+          次の3つの命題は互いに背反である.
+          \align(${
+            | \text!{(a)}\quad | \pangle{A,R}\cong\pangle{B,S}
+            | \text!{(b)}\quad | \exists y\in B\p{\pangle{A,R}\cong\pangle{\mathrm{pred}(B,y,S),S}}
+            | \text!{(c)}\quad | \exists x\in A\p{\pangle{\mathrm{pred}(A,x,R),R}\cong\pangle{B,S}}
+          |});
+        }
+        +proof{
+          次のように ${f} を定める.
+          \align(${
+            | f |= \pb{\pangle{v, w}: v\in A\land w\in B\land\pangle{\mathrm{pred}(A,v,R), R}\cong\pangle{\mathrm{pred}(B,w,S),S}}
+          |});
+          わからず
+        }
+        +prop{Axiom 9 (選択公理).}{${\forall A\exists R(\text!{RはAを整列順序づけする})}}
+      >
+      +subsection{順序数}<
+        +definition?:({推移的}){集合 ${x} の任意の要素が同時に ${x} の部分集合でもあるとき ${x} が推移的であると呼ぶ.}
+        +definition?:({順序数}){推移的な集合 ${x} が ${\in} によって整列順序づけされるとき, ${x} を順序数と呼ぶ.}
+        +theorem{
+          \enumerate{
+            * ${x} が順序数で ${y\in x} なら, ${y} も順序数で ${y=\mathrm{pred}(x,y)}.
+            * ${x} と ${y} が順序数で ${y\cong x} なら, ${x=y}.
+            * ${x} と ${y} が順序数なら, ${x\in y, y\in x, y=x} のどれか1つだけが成立する.
+            * ${x} と ${y} と ${z} が順序数で ${x\in y, y\in z} であれば, ${x\in z} である.
+            * ${C} が順序数の空でない集合であれば, ${\exists x\in C\forall y\in C(x\in y\lor x=y)}.
+          }
+        }
+        +proof{}
+      >
+      +subsection{クラスと再帰的定義}<
+        +p {
+          やろうと思ったけどかなり骨折れる. 重要な部分だけ証明する.
+        }
+      >
+      +subsection{基数}<
+        +definition?:({集合のサイズの比較}){
+          \enumerate{
+            * ${A\precsim B} とは ${A} から ${B} への1対1関数があるということである.
+            * ${A\approx B} とは ${A} から ${B} の上への1対1関数があるということである.
+            * ${A\prec B} とは ${A\precsim B} かつ ${B\precnsim A} ということである.
+          }
+        }
+        +theorem?:({シュレーダーとベルンシュタインの定理}){
+          \align(${
+            | A\precsim B, B\precsim A |\to A\approx B
+          |});
+        }
+        +proof {
+          ${A\precsim B, B\precsim A} より1対1関数 ${f:A\to B} と ${g:B\to A} が存在する. ${A_0 = A, B_0 = B, A_{n+1} = g''B_n, B_{n+1} = f''A_n, A' = \bigcap_n A_n\cup\bigcup_n A_{2n}\\A_{2n+1}} とおく. このとき次のように ${h:A\to B} を定義する.
+          \align(${
+            | h(x) |= \cases{
+              | f(x)      | \p{x \in A'}
+              | g^{-1}(x) | \p{\text!{else}}
+              |}
+          |});
+          関数 ${h(x)} が全単射であることを示す. まず ${h(x)} の単射性 ${\forall x, y\. h(x) = h(y)\implies x = y} を示す. ${x,y \in A'} のとき, ${f} の単射性より成り立つ. ${x,y \nin A'} のとき, ${g^{-1}} の単射性より成り立つ. また ${x\in A', y\nin A'} と仮定すると, 前提より ${f(x) = g^{-1}(y)\iff(g\circ f)(x) = y}. ここで ${x\in\bigcap_n A_n} とすると, ${y=(g\circ f)(x)\in\bigcap_n A_n} より矛盾. ${x\in A_{2n}\\A_{2n+1}} とすると, ${y=(g\circ f)(x)\in A_{2n+2}\\A_{2n+3}}
+        }
+
+      >
+      +subsection{実数}<
+
+      >
+      +subsection{実数}<
+
+      >
+      +subsection{メタ理論の形式化}<
+
+      >
+    >
+  >
+  +chapter{圏論}<
+    +section ?:(`sec:typesetting`) {}<
+      +subsection{a}<
+        +definition?:({圏(category)}){
+          圏 ${C} とは対象(object)の集まり ${\mathrm{Ob}(C)} と射(morphism)の集まり ${\mathrm{Mor}(C)} の組であって次を満たすものをいう.
+          \enumerate{
+            * 各 ${f\in\mathrm{Mor}(C)} に対し, ドメイン(domain)とコドメイン(codomain)
+            * 射の合成についてモノイドを成している.
+          }
+        }
+        +definition?:({関手(functor)}){
+          圏 ${C, D} に対し, 関手 ${F:C\to D} とは ${\mathrm{Ob}(C)\ni a\mapsto F(a)\in\mathrm{Ob}(D)}, ${\mathrm{Mor}(C)\ni f\mapsto F(f)\in\mathrm{Mor}(D)} とし, 射の合成についてモノイド準同型を成すものである.
+        }
+      >
+    >
+  >
+  +chapter{}<
+  % +math(${
+  %   \derive{|\paren{\app{\Gamma}{x} \synteq \tau}|}{
+  %     \tyjd{\Gamma}{x}{\tau}
+  %   }
+
+  %   \derive{|
+  %     \tyjd{\overwrite{\Gamma}{x}{\tau_1}}{M}{\tau_2}
+  %   |}{
+  %     \tyjd{\Gamma}{\paren{\tmabstyped{x}{\tau_1}{M}}}{\tau_1 \to \tau_2}
+  %   }
+  % });
+  % +math(${
+  %   \derive{|
+  %     \tyjd{\Gamma}{M}{\tau_1 \to \tau_2} | \tyjd{\Gamma}{N}{\tau_1}
+  %   |}{
+  %     \tyjd{\Gamma}{M N}{\tau_2}
+  %   }
+  % });
+  % +math (${
+  %   \derive{| A | \derive{| B | C |}{D} |}{E}
+  % });
+        % \math-list(Term.(${
+        %   | \derive?:{\text!{(E-Val)}}{||}{\bs!(tmv)!(tmv)}
+
+        %   | \derive?:{\text!{(E-App)}}{
+        %       | \bs!(tmesub ${1})!(lam vx tme)
+        %       | \bs!(tmesub ${2})!(tmvsub ${2})
+        %       | \bs!(subst (tmvsub ${2}) vx tme)!(tmv)
+        %       |}{\bs!(app (tmesub ${1}) (tmesub ${2}))!(tmv)}
+
+        %   | \derive?:{\text!{(E-LetIn)}}{
+        %       | \bs!(tmesub ${1})!(tmvsub ${1})
+        %       | \bs!(subst (tmvsub ${1}) vx (tmesub ${2}))!(tmvsub ${2})
+        %       |}{\bs!(let-in vx (tmesub ${1}) (Some(tmesub ${2})))!(tmvsub ${2})}
+
+        %   | \derive?:{\text!{(E-ReadI)}}{
+        %       | \bs!(tmesub ${1})!(tmctx)
+        %       | \bs!(tmesub ${2})!(textI tmIt)
+        %       | \bsI!(tmctx)!(tmIt)!(tmIb)
+        %       |}{\bs!(readI (tmesub ${1}) (tmesub ${2}))!(boxI tmIb)}
+
+        %   | \derive?:{\text!{(E-ReadB)}}{
+        %       | \bs!(tmesub ${1})!(tmctx)
+        %       | \bs!(tmesub ${2})!(textB tmBt)
+        %       | \bsB!(tmctx)!(tmBt)!(tmBb)
+        %       |}{\bs!(readB (tmesub ${1}) (tmesub ${2}))!(boxB tmBb)}
+        %   |}));%
+  >
+>

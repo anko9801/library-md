@@ -49,6 +49,8 @@ The Arithmetic of Elliptic Curves (著: Silverman)
 [CRYSTALS - Kyber](https://eprint.iacr.org/2017/634.pdf)
 [Meet The Signature Standard of the Future … SPHINCS+ | by Prof Bill Buchanan OBE | ASecuritySite: When Bob Met Alice | Medium](https://medium.com/asecuritysite-when-bob-met-alice/meet-the-standard-of-the-future-sphincs-ee2b9e4c7b5e)
 
+[Advances in Elliptic Curve CryptographyLondon Mathematical Society Lecture Note Series ; 317 (preterhuman.net)](https://cdn.preterhuman.net/texts/cryptography/Cambridge%20University%20Press.%20Advances%20in%20Elliptic%20Curve%20Cryptography%20(2005).pdf)
+
 ## Security
 - [Flatt Security Blog](https://blog.flatt.tech/)
 - [RET2 Systems Blog](https://blog.ret2.io/)

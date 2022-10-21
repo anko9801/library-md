@@ -1,4 +1,5 @@
 {
   "textFontFamily": "Meiryo",
-  "theme": "system"
+  "theme": "system",
+  "accentColor": ""
 }
