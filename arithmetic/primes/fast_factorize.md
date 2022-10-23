@@ -1,8 +1,5 @@
 ---
 title: "高速素因数分解 (Pollard-ρ法/Miller-Rabin法)"
-permalink: /snippets/fast-factorize
-writer: anko9801
-layout: library
 ---
 
 ## 説明

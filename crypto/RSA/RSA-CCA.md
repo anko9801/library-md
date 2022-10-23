@@ -1,8 +1,5 @@
 ---
 title: "Chosen-ciphertext Attack"
-permalink: /snippets/rsa-cca
-writer: anko9801
-layout: library
 ---
 
 ## 説明

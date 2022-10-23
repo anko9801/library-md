@@ -1,8 +1,5 @@
 ---
 title: "永続UnionFind"
-permalink: /snippets/persist-unionfind
-writer: anko9801
-layout: library
 ---
 
 ## 説明

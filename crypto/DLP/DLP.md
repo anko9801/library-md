@@ -1,8 +1,5 @@
 ---
 title: "離散対数問題 (DLP)"
-permalink: /snippets/dlp
-writer: anko9801
-layout: library
 ---
 
 ## 説明

@@ -1,8 +1,5 @@
 ---
 title: "Partial Key Exposure Attack"
-permalink: /snippets/partial-key
-writer: anko9801
-layout: library
 ---
 
 ## 説明

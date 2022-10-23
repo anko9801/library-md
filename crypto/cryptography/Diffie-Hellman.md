@@ -1,8 +1,5 @@
 ---
 title: "Diffie-Hellman 鍵交換"
-permalink: /snippets/diffie-hellman
-writer: anko9801
-layout: library
 ---
 
 ## 説明

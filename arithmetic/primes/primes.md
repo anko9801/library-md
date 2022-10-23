@@ -1,8 +1,5 @@
 ---
 title: "素数列挙"
-permalink: /snippets/primes
-writer: anko9801
-layout: library
 ---
 
 ## 説明

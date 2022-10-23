@@ -1,3 +1,7 @@
+---
+title: "RDBMS"
+---
+
 ### isolation level
 複数のトランザクションが1つのテーブルを操作するときの不整合についてどの程度許容するか
 1. READ UNCOMMITTED ... COMMIT されてないトランザクションの変更を参照できる

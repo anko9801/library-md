@@ -1,8 +1,5 @@
 ---
 title: "Pohlig-Hellman Attack"
-permalink: /snippets/pohlig-hellman-ec
-writer: anko9801
-layout: library
 ---
 
 ## 説明

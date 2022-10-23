@@ -1,3 +1,7 @@
+---
+title: "参考資料"
+---
+
 $$
 \newcommand{\calO}{\mathcal{O}}
 \newcommand{\FF}{\mathbb{F}}
@@ -26,7 +30,7 @@ $$
 - $\mathbb{Z}\text{-algebra}$に対する$\mathbb{P}^n(R)$
     - $\mathbb{Z}$から$R$への凖同型がある
     - 雪江代数学2巻 Def. 1.3.13 (p.15)の定義
-      + $k, A$を環とする.　$k$から$A$への準同型があるとき, $A$を$k$代数, あるいは$k$上の代数という. 
+      + $k, A$を環とする.　$k$から$A$への準同型があるとき, $A$を$k$代数, あるいは$k$上の代数という.
 - $\calO=(0 : 1 : 0)$で楕円曲線の群演算に関する単位元
 - 持ち上げ
     - 準同型の移動
@@ -39,7 +43,7 @@ The Block Cipher Companion
 現代暗号の誕生と発展：ポスト量子暗号・仮想通貨・新しい暗号 岡本 龍明 (著)
 現代暗号への招待 (ライブラリ情報学コア・テキスト) 黒澤 馨 (著)
 
-暗号理論のための格子の数学 絶版 
+暗号理論のための格子の数学 絶版
 [Complexity of Lattice Problems | SpringerLink](https://link.springer.com/book/10.1007/978-1-4615-0897-7)
 
 The Arithmetic of Elliptic Curves (著: Silverman)

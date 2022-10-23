@@ -1,8 +1,5 @@
 ---
 title: "pwn"
-permalink: /snippets/pwn
-writer: anko9801
-layout: library
 ---
 
 ## 説明

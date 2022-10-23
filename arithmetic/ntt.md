@@ -1,8 +1,5 @@
 ---
 title: "数論変換"
-permalink: /snippets/ntt
-writer: anko9801
-layout: library
 ---
 
 ## 説明

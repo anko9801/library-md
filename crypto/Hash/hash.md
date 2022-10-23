@@ -1,8 +1,5 @@
 ---
 title: "ハッシュ関数"
-permalink: /snippets/hash
-writer: anko9801
-layout: library
 ---
 
 ## 説明

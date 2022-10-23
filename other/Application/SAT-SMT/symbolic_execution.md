@@ -1,8 +1,5 @@
 ---
 title: "シンボリック実行エンジン"
-permalink: /snippets/symbolic-execution
-writer: anko9801
-layout: library
 ---
 
 ## 説明

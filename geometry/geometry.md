@@ -1,8 +1,5 @@
 ---
 title: "幾何ライブラリ"
-permalink: /snippets/geometry
-writer: anko9801
-layout: library
 ---
 
 ## 説明

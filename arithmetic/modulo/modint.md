@@ -1,8 +1,5 @@
 ---
 title: "Modint"
-permalink: /snippets/modint
-writer: anko9801
-layout: library
 ---
 
 ## 説明

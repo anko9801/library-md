@@ -1,8 +1,5 @@
 ---
 title: "SageMath チートシート"
-permalink: /snippets/sagemath
-writer: anko9801
-layout: library
 ---
 
 ## 説明

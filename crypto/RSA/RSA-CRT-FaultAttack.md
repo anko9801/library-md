@@ -1,8 +1,5 @@
 ---
 title: "RSA-CRT Fault Attack"
-permalink: /snippets/rsa-crt-fault
-writer: anko9801
-layout: library
 ---
 
 ## 説明

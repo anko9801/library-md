@@ -1,3 +1,6 @@
+---
+title: "Schoof Algorithm"
+---
 
 Hasse-Weil 定理より
 

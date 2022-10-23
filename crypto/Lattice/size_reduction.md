@@ -1,8 +1,5 @@
 ---
 title: "サイズ基底簡約"
-permalink: /snippets/size-reduction
-writer: anko9801
-layout: library
 ---
 
 ## 説明

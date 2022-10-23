@@ -1,14 +1,8 @@
 ---
 title: "Gram-Schmidt の直交化 (GSO: Gram-Schmidt Orthonormalization)"
-permalink: /snippets/gso
-writer: anko9801
-layout: library
 ---
 
 ## 説明
-
-
-
 
 ### Gram-Schmidt の直交化 (GSO: Gram-Schmidt Orthonormalization)
 

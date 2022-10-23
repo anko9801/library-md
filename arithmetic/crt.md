@@ -1,8 +1,5 @@
 ---
 title: "中国剰余定理"
-permalink: /snippets/crt
-writer: anko9801
-layout: library
 ---
 
 ## 説明

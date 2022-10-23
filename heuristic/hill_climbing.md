@@ -1,8 +1,5 @@
 ---
 title: "山登り法"
-permalink: /snippets/hill-climbing
-writer: anko9801
-layout: library
 ---
 
 ## 説明

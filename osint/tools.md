@@ -1,8 +1,5 @@
 ---
 title: "OSINT"
-permalink: /snippets/osint
-writer: anko9801
-layout: library
 ---
 
 

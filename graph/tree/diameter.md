@@ -1,8 +1,5 @@
 ---
 title: "木の直径"
-permalink: /snippets/tree-diameter
-writer: anko9801
-layout: library
 ---
 
 ## 説明

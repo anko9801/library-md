@@ -1,8 +1,5 @@
 ---
 title: "Baby-step Giant-step"
-permalink: /snippets/bsgs
-writer: anko9801
-layout: library
 ---
 
 ## 説明

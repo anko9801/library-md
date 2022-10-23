@@ -3,7 +3,7 @@ title: 🪴 あやめHex
 enableToc: false
 ---
 
-# library-md
+# ayame library
 
 # これはなに？
 
@@ -55,7 +55,7 @@ CTFのライブラリ/知識集らしいです。(現在はLYTに近い思想で
 - 最大クリーク
 - [強連結成分分解](./graph/scc.md)
 
-## 数学
+## 算数
 
 - modulo
   - [Modint](./arithmetic/modulo/modint.md)
@@ -146,6 +146,7 @@ CTFのライブラリ/知識集らしいです。(現在はLYTに近い思想で
     - Frozen Heart
   - Lamport 署名
   - ゼロ知識証明
+  - Fujisaki-Okamoto Transformation
 - 格子
   - Gram-Schmidt
   - SVP (Shortest Vector Problem)
@@ -207,8 +208,7 @@ CTFのライブラリ/知識集らしいです。(現在はLYTに近い思想で
     - Millar のアルゴリズム
     - Schoof のアルゴリズム
     - Tate pairing / Weil pairing
-    - ECFFT
-    - Fujisaki-Okamoto Transformation
+    - [ECFFT](./crypto/ECC/ECFFT.md)
     - 超楕円曲線
   - 攻撃
     - [Pohlig-Hellman Attack](./crypto/ECC/Pohlig-Hellman.md)
@@ -219,7 +219,7 @@ CTFのライブラリ/知識集らしいです。(現在はLYTに近い思想で
     - GHS Attack
     - Weil decsent
     - Dual EC DRBG
-- AES
+- [AES](./crypto/AES/AES.md)
   - Padding Oracle Attack
   - BEAST Attack
   - Lucky Thirteen Attack
@@ -228,6 +228,7 @@ CTFのライブラリ/知識集らしいです。(現在はLYTに近い思想で
   - Integral Cryptanalysis
 - Hash
   - 誕生日攻撃
+  - Differencial cryptanalysis
 - 疑似乱数生成器 (PRNG)
   - Xorshift
   - [Mersenne twister](./crypto/PRNG/MersenneTwister.md)

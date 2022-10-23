@@ -1,3 +1,6 @@
+---
+title: "その他の暗号"
+---
 
 [GoogleがTLSでの採用を提唱している共通鍵暗号方式「ChaCha」についてまとめた - sonickun.log (hatenablog.com)](https://sonickun.hatenablog.com/entry/2016/04/03/183220)
 ChaCha [RFC 7538](https://tools.ietf.org/html/rfc7539)

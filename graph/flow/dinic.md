@@ -1,8 +1,5 @@
 ---
 title: "最大流 (Dinic)"
-permalink: /snippets/dinic
-writer: anko9801
-layout: library
 ---
 
 ## 説明

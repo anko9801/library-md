@@ -1,8 +1,5 @@
 ---
 title: "Wiener's Attack"
-permalink: /snippets/wieners-attack
-writer: anko9801
-layout: library
 ---
 
 ## 説明

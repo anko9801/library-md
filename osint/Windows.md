@@ -1,3 +1,6 @@
+---
+title: "windows log"
+---
 
 実行されたPowershell スクリプトのログ
 Event Viewer

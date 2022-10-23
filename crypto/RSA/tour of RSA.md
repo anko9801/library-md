@@ -1,3 +1,7 @@
+---
+title: "Tour of RSA"
+---
+
 # RSA暗号を極める！(理論編)
 
 というか無限工事編です(文章が拙くて申し訳ない)
@@ -446,7 +450,7 @@ def decrypt(cipher):
 
 cipher = encrypt(b"This is RSA")
 print(cipher)
-# 
+#
 plaintext = decrypt(cipher)
 print(plaintext)
 # This is RSA

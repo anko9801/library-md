@@ -1,8 +1,5 @@
 ---
 title: "行列"
-permalink: /snippets/matrix
-writer: anko9801
-layout: library
 ---
 
 ## 説明

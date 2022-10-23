@@ -1,8 +1,5 @@
 ---
 title: "AES"
-permalink: /snippets/aes
-writer: anko9801
-layout: library
 ---
 
 - AES-ECB (Electronic Codeblock)

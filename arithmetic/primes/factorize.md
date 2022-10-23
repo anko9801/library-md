@@ -1,8 +1,5 @@
 ---
 title: "素因数分解"
-permalink: /snippets/factorize
-writer: anko9801
-layout: library
 ---
 
 ## 説明

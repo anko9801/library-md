@@ -1,3 +1,7 @@
+---
+title: "MOV/FR Reduction"
+---
+
 ## MOV Reduction
 $R=dP$ となるECDLPを解く
 

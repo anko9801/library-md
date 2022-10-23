@@ -1,8 +1,5 @@
 ---
 title: "Binary Indexed Tree"
-permalink: /snippets/bit
-writer: anko9801
-layout: library
 ---
 
 ## 説明

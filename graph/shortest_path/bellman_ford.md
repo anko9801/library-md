@@ -1,8 +1,5 @@
 ---
 title: "単一始点最短路 (Bellman-Ford)"
-permalink: /snippets/bellman-ford
-writer: anko9801
-layout: library
 ---
 
 ## 説明

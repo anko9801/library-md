@@ -1,8 +1,5 @@
 ---
 title: "Pollard's rho 法"
-permalink: /snippets/pollards-rho
-writer: anko9801
-layout: library
 ---
 
 ## 説明

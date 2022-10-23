@@ -1,8 +1,5 @@
 ---
 title: "セグメント木"
-permalink: /snippets/segtree
-writer: anko9801
-layout: library
 ---
 
 ## 説明

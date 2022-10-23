@@ -1,8 +1,5 @@
 ---
 title: "fast"
-permalink: /snippets/fast
-writer: anko9801
-layout: library
 ---
 
 

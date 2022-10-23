@@ -1,8 +1,5 @@
 ---
 title: "BKZ(Block Korkine-Zolotareff) 基底簡約"
-permalink: /snippets/lll
-writer: anko9801
-layout: library
 ---
 
 ## 説明

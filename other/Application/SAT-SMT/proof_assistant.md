@@ -1,8 +1,5 @@
 ---
 title: "定理証明支援系"
-permalink: /snippets/proof-assistant
-writer: anko9801
-layout: library
 ---
 
 ## 説明

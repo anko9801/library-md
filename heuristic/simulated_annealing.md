@@ -1,8 +1,5 @@
 ---
 title: "焼きなまし法"
-permalink: /snippets/simulated-annealing
-writer: anko9801
-layout: library
 ---
 
 ## 説明

@@ -1,8 +1,5 @@
 ---
 title: "SSSA Attack"
-permalink: /snippets/sssa
-writer: anko9801
-layout: library
 ---
 
 ## 説明

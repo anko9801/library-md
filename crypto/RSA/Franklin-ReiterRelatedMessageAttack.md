@@ -1,8 +1,5 @@
 ---
 title: "Franklin-Reiter Related Message Attack"
-permalink: /snippets/franklin-reiter
-writer: anko9801
-layout: library
 ---
 
 ## 説明

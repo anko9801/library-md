@@ -1,8 +1,5 @@
 ---
 title: "Schnorr Signatures"
-permalink: /snippets/schnorr
-writer: anko9801
-layout: library
 ---
 
 ## 説明

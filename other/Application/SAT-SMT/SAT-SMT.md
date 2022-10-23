@@ -1,3 +1,7 @@
+---
+title: "SAT SMT"
+---
+
 $$
 \newcommand{\not}{\overline}
 $$

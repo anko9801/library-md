@@ -1,8 +1,5 @@
 ---
 title: "Segment tree beats"
-permalink: /snippets/segtreebeats
-writer: anko9801
-layout: library
 ---
 
 ## 説明

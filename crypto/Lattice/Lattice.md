@@ -1,8 +1,5 @@
 ---
 title: "格子"
-permalink: /snippets/lattice
-writer: anko9801
-layout: library
 ---
 
 ## 説明

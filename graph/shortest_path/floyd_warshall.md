@@ -1,8 +1,5 @@
 ---
 title: "全点対最短路 (Floyd-Warshall)"
-permalink: /snippets/floyd-warshall
-writer: anko9801
-layout: library
 ---
 
 ## 説明

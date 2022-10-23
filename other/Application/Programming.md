@@ -1,3 +1,7 @@
+---
+title: "プログラミング言語"
+---
+
 # プログラミング言語入門
 
 任意の実行はデータとアクションで構成されている。
@@ -195,4 +199,4 @@ data race free
 sequentially consistent atomics(素直なatomics)
 - Javaのvolatile, C++のdefault atomics, Goのsync/atomic, JavaScript
 
-## 第五章 
+## 第五章

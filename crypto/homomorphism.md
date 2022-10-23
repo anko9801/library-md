@@ -1,10 +1,13 @@
+---
+title: "Homorphism"
+---
 
 # 準同型暗号
 
 加法準同型 ex. 岡本・内山, Paillier, Lifted-ElGamal
-- 
+-
 乗法準同型 ex. RSA, ElGamal
-- 
+-
 レベル準同型
 - 乗算回数に制約がある完全準同型
 - レベルnはn次方程式を計算できる

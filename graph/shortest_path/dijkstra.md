@@ -1,8 +1,5 @@
 ---
 title: "単一始点最短路 (Dijkstra)"
-permalink: /snippets/dijkstra
-writer: anko9801
-layout: library
 ---
 
 ## 説明

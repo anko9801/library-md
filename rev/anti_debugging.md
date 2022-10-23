@@ -1,8 +1,5 @@
 ---
 title: "Anti debugging"
-permalink: /snippets/anti-debugging
-writer: anko9801
-layout: library
 ---
 
 ## 説明

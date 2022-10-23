@@ -1,8 +1,5 @@
 ---
 title: "RSA暗号"
-permalink: /snippets/rsa
-writer: anko9801
-layout: library
 ---
 
 ## 説明

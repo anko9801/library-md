@@ -1,8 +1,5 @@
 ---
 title: "ポテンシャル付きUnionFind"
-permalink: /snippets/potential-unionfind
-writer: anko9801
-layout: library
 ---
 
 ## 説明

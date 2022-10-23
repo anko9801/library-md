@@ -1,3 +1,7 @@
+---
+title: "Tour of Lattice"
+---
+
 # 格子暗号を極める！
 
 無限工事編
@@ -62,21 +66,21 @@ $$
 
 $$
 \begin{aligned}
-B &= 
+B &=
 \begin{pmatrix}
 \mathbf{b}_1 \\
 \mathbf{b}_2 \\
 \mathbf{b}_3 \\
 \mathbf{b}_4 \\
 \end{pmatrix}
-& U &= 
+& U &=
 \begin{pmatrix}
 1 & 0 & 0 & 0 \\
 \mu_{2,1} & 1 & 0 & 0 \\
 \mu_{3,1} & \mu_{3,2} & 1 & 0 \\
 \mu_{4,1} & \mu_{4,2} & \mu_{4,3} & 1 \\
 \end{pmatrix}
-& B^* &= 
+& B^* &=
 \begin{pmatrix}
 \mathbf{b}_1^* \\
 \mathbf{b}_2^* \\

@@ -1,3 +1,7 @@
+---
+title: "Attack Model"
+---
+
 ランダムオラクルモデル
 
 - 選択平文攻撃(Chosen-plaintext attack; CPA)

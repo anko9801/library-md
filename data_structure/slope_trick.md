@@ -1,8 +1,5 @@
 ---
 title: "Slope Trick"
-permalink: /snippets/slope-trick
-writer: anko9801
-layout: library
 ---
 
 ## 説明

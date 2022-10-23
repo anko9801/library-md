@@ -1,8 +1,5 @@
 ---
 title: "ヒューリスティック"
-permalink: /snippets/heuristic
-writer: anko9801
-layout: library
 ---
 
 ## 説明

@@ -1,8 +1,5 @@
 ---
 title: "TEE"
-permalink: /snippets/tee
-writer: anko9801
-layout: library
 ---
 
 Trusted Execution Environment: TEE とはプロセッサ上に隔離された実行環境を用意することでセキュリティを高める技術です。

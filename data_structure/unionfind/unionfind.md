@@ -1,8 +1,5 @@
 ---
 title: "UnionFind"
-permalink: /snippets/unionfind
-writer: anko9801
-layout: library
 ---
 
 ## 説明

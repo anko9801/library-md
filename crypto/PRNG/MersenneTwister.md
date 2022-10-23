@@ -1,8 +1,5 @@
 ---
 title: "メルセンヌ ツイスタ"
-permalink: /snippets/mersenne-twister
-writer: anko9801
-layout: library
 ---
 
 ## 説明

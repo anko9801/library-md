@@ -1,8 +1,5 @@
 ---
 title: "Håstad’s Broadcast Attack"
-permalink: /snippets/hastads-broadcast
-writer: anko9801
-layout: library
 ---
 
 ## 説明

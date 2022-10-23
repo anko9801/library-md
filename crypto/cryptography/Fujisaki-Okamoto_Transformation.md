@@ -1,3 +1,7 @@
+---
+title: "Fujisaki-Okamoto Transformation"
+---
+
 ## 説明
 
 ## 証明

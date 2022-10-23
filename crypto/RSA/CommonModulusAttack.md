@@ -1,8 +1,5 @@
 ---
 title: "Common Modulus Attack"
-permalink: /snippets/common-modulus
-writer: anko9801
-layout: library
 ---
 
 ## 説明

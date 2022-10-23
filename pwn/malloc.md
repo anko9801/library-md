@@ -1,8 +1,5 @@
 ---
 title: "glibc malloc"
-permalink: /snippets/malloc
-writer: anko9801
-layout: library
 ---
 
 ## 説明

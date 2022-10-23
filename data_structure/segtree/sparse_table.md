@@ -1,7 +1,5 @@
 ---
 title: "セグメント木"
-writer: anko9801
-layout: library
 ---
 
 ## 説明

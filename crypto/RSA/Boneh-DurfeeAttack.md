@@ -1,8 +1,5 @@
 ---
 title: "Boneh-Durfee Attack"
-permalink: /snippets/boneh-durfee
-writer: anko9801
-layout: library
 ---
 
 ## 説明

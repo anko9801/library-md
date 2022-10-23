@@ -1,8 +1,5 @@
 ---
 title: "LSB Decryption Oracle Attack"
-permalink: /snippets/lsb-decryption-oracle
-writer: anko9801
-layout: library
 ---
 
 ## 説明

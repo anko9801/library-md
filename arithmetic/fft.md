@@ -1,8 +1,5 @@
 ---
 title: "高速フーリエ変換 (FFT)"
-permalink: /snippets/fft
-writer: anko9801
-layout: library
 ---
 
 ## 説明

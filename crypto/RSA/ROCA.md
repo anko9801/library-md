@@ -1,8 +1,5 @@
 ---
 title: "Return Of Coppersmith Attack"
-permalink: /snippets/return-of-coppersmith-attack.md
-writer: anko9801
-layout: library
 ---
 
 ## 説明

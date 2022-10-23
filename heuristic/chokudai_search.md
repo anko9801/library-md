@@ -1,8 +1,5 @@
 ---
 title: "chokudai サーチ"
-permalink: /snippets/chokudai-search
-writer: anko9801
-layout: library
 ---
 
 ## 説明

@@ -1,3 +1,7 @@
+---
+title: "OS"
+---
+
 PXE(Preboot eXecution Environment) Boot
 
 ### Basic Input/Output System: BIOS
@@ -79,7 +83,7 @@ bash や X Window System などの、人間が直接やりとりする、応答�
 	- 割り込み回数が増えると割り込みハンドラが動作する時間が増えるため、システム全体スループットが下がる。
 
 ### Completely Fair Scheduler (v2.6.23~)
-v2.6.23 から入った Completely Fair Scheduler: CFS 
+v2.6.23 から入った Completely Fair Scheduler: CFS
 赤黒木上で葉ノードに個々のタスク、キーはタスクごとに存在するvruntimeという値。
 検索コスト $O(\log n)$ に最適化(vruntime 最小のタスクをキャッシュなど)を加えてよい。
 

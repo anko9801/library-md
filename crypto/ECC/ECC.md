@@ -1,3 +1,7 @@
+---
+title: "楕円曲線暗号"
+---
+
 # 楕円曲線暗号
 
 ## 楕円曲線
@@ -60,7 +64,7 @@ $$
 \begin{aligned}
 x_3 &= \lambda^2 - x_1 - x_2 \\
 y_3 &= \lambda(x_1 - x_3) - y_1 \\
-\lambda &= 
+\lambda &=
 \begin{dcases}
 \frac{y_2 - y_1}{x_2 - x_1} \quad (P \neq Q) \\
 \frac{3x_1^2 + a}{2y_1} \quad (P = Q)
@@ -175,7 +179,7 @@ $$
 \begin{aligned}
 x_3 &= \lambda^2 - x_1 - x_2 \\
 y_3 &= \lambda(x_1 - x_3) - y_1 \\
-\lambda &= 
+\lambda &=
 \begin{dcases}
 \frac{y_2 - y_1}{x_2 - x_1} \quad (P \neq Q) \\
 \frac{3x_1^2 + a}{2y_1} \quad (P = Q)
@@ -299,7 +303,7 @@ $$
 ### ECFFT
 
 
-より面白い話題として楕円曲線暗号にバックドアが仕込まれていたという事件がある。 
+より面白い話題として楕円曲線暗号にバックドアが仕込まれていたという事件がある。
 - Dual EC DRBG
 
 構成

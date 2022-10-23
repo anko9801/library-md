@@ -1,8 +1,5 @@
 ---
 title: "強連結成分分解"
-permalink: /snippets/scc
-writer: anko9801
-layout: library
 ---
 
 ## 説明

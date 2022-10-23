@@ -1,3 +1,7 @@
+---
+title: "デバッガ"
+---
+
 ptrace
 
 gdb
