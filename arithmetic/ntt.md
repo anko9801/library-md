@@ -15,6 +15,5 @@ $O(N\log{N})$
 
 ## 実装
 
-{% include cpp.html code="math/ntt.hpp" %}
 
 ## 使用例
