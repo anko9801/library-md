@@ -7,9 +7,17 @@ layout: library
 
 ## 説明
 
-mmap
+環境
+64bit
 
-main_arena
+ヒープ領域にmalloc_state
+glibcのデータ領域にmain_arena
+binには沢山の種類がある
+- tcache
+- fastbins
+- unsorted bins
+- small bins
+- large bins
 
 libc 2.29
 tcacheでdouble freeはできない

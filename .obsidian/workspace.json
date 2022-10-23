@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "science/math/体論.md",
+                "file": "pwn/malloc.md",
                 "mode": "source",
                 "source": false
               }
@@ -90,7 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "science/math/体論.md",
+                "file": "pwn/malloc.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,15 +113,15 @@
   },
   "active": "5669f51c4d647058",
   "lastOpenFiles": [
-    "science/math/圏論.md",
-    "science/math/数学基礎論.md",
+    "pwn/kernel_exploit.md",
+    "pwn/eBPF.md",
+    "pwn/Debugger.md",
+    "pwn/dataStructure.md",
+    "pwn/AEG.md",
+    "pwn/HouseOfXXX/House_of_botcake.md",
     "science/math/体論.md",
-    "science/math/環.md",
-    "science/math/群.md",
-    "science/phys/解析力学.md",
-    "crypto/SageMath.md",
-    "pwn/pwn.md",
-    "science/数学まとめ.md",
-    "science/物理学まとめ.md"
+    "science/math/math-basis.pdf",
+    "science/math/圏論.md",
+    "science/math/数学基礎論.md"
   ]
 }

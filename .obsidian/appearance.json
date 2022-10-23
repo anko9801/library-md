@@ -1,5 +1,8 @@
 {
   "textFontFamily": "Meiryo",
   "theme": "system",
-  "accentColor": ""
+  "accentColor": "",
+  "cssTheme": "",
+  "translucency": false,
+  "nativeMenus": false
 }
