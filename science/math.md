@@ -1,7 +1,9 @@
-# まとめ
+# 数学
 各単元を下の階層で証明する. ここでは重要な定義と本質をまとめる.
 
 ## 数学基礎論
+
+[数学基礎論ノート](https://drive.google.com/file/d/1NlaVJEUUf_jEIPLkx6i4JgU9X47J4nat/view?usp=sharing)
 
 ## 集合論
 - 全順序集合
@@ -45,7 +47,7 @@
 
 ## 圏論
 - 圏論の基本
-**米田の補題** 
+**米田の補題**
 ```tikz
 \usepackage{tikz-cd}
 
