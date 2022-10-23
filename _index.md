@@ -49,7 +49,7 @@ CTFのライブラリ/知識集らしいです。(現在はLYTに近い思想で
   - 二部グラフ判定
   - 最大マッチング
 - ツリー
-  - [木の直径](./graph/tree/tree_diameter.md)
+  - [木の直径](./graph/tree/diameter.md)
   - 最小共通祖先
 - Functional Graph
 - 最大クリーク
@@ -117,12 +117,14 @@ CTFのライブラリ/知識集らしいです。(現在はLYTに近い思想で
     - ret2libc
   - ROP: Return Oriented Programming
 - GOT overwrite
+- glibc
+  - [malloc](./pwn/malloc.md)
 - Heap Exploit
-  - glibc malloc
   - tcache poisoning
   - tcache double free
   - fastbin attack
   - House of XXX
+    - [House of botcake](./pwn/HouseOfXXX/House_of_botcake.md)
     - House of Orange
     - House of Spirit
     - House of Lore
@@ -130,25 +132,27 @@ CTFのライブラリ/知識集らしいです。(現在はLYTに近い思想で
     - House of Force
   - overlapping chunks
   - mmap overlapping chunks
-- Kernel Exploit
+- Kernel Code Reading
+- [Kernel Exploit](./pwn/kernel_exploit.md)
   - Heap Spray
   - Dirty Pipe
-- Automatic Exploit Generation
+- [Automatic Exploit Generation](./pwn/AEG.md)
 
 ## Crypto
 
 使用言語はPythonまたはSageMathです。それぞれの暗号自体を取り扱うのではなく、Cryptoの背景にある理論を取り扱っていきます。
 
 - 暗号構成基盤
-  - [Diffie-Hellman 鍵交換](Diffie-Hellman.md)
+  - [Diffie-Hellman 鍵交換](./crypto/cryptography/Diffie-Hellman.md)
   - Fiat-Shamir 変換
-    - [Schnorr 署名](Schnorr.md)
+    - [Schnorr 署名](./crypto/cryptography/Schnorr.md)
     - Frozen Heart
   - Lamport 署名
-  - ゼロ知識証明
-  - Fujisaki-Okamoto Transformation
-- 格子
-  - Gram-Schmidt
+  - [ゼロ知識証明](./crypto/cryptography/ZeroKnowledgeProof.md)
+  - [Fujisaki-Okamoto Transformation](./crypto/cryptography/Fujisaki-Okamoto_Transformation.md)
+  - [準同型暗号](./crypto/cryptography/homomorphism.md)
+- [格子](./crypto/Lattice/tour_of_Lattice.md)
+  - [Gram-Schmidt](./crypto/Lattice/GSO.md)
   - SVP (Shortest Vector Problem)
     - [Lagrange 基底簡約 (Gauss 基底簡約)](./crypto/Lattice/Lagrange.md)
     - [サイズ基底簡約](./crypto/Lattice/size_reduction.md)
@@ -203,7 +207,7 @@ CTFのライブラリ/知識集らしいです。(現在はLYTに近い思想で
   - [Partial Key Exposure Attack](./crypto/RSA/PartialKeyExposureAttack.md)
   - [逆元が存在しないとき](./crypto/RSA/NoInverse.md)
   - ROCA Attack
-- 楕円曲線暗号
+- [楕円曲線暗号](./crypto/ECC/ECC.md)
   - 楕円曲線
     - Millar のアルゴリズム
     - Schoof のアルゴリズム
@@ -212,12 +216,10 @@ CTFのライブラリ/知識集らしいです。(現在はLYTに近い思想で
     - 超楕円曲線
   - 攻撃
     - [Pohlig-Hellman Attack](./crypto/ECC/Pohlig-Hellman.md)
-    - MOV Reduction
-    - FR Reduction
-    - SSSA Attack
-    - Invalid Curve Attack
-    - GHS Attack
-    - Weil decsent
+    - [MOV/FR Reduction](./crypto/ECC/MOV-FR-Reduction.md)
+    - [SSSA Attack](./crypto/ECC/SSSA-Attack.md)
+    - [Invalid Curve Attack](./crypto/ECC/Invalid-Curve-Attack.md)
+    - [GHS Attack](./crypto/ECC/GHS-Attack.md)
     - Dual EC DRBG
 - [AES](./crypto/AES/AES.md)
   - Padding Oracle Attack
@@ -226,7 +228,8 @@ CTFのライブラリ/知識集らしいです。(現在はLYTに近い思想で
   - POODLE Attack
   - ghash
   - Integral Cryptanalysis
-- Hash
+- [その他の暗号](./crypto/cryptography/other.md)
+- [Hash](./crypto/Hash/hash.md)
   - 誕生日攻撃
   - Differencial cryptanalysis
 - 疑似乱数生成器 (PRNG)
@@ -234,11 +237,13 @@ CTFのライブラリ/知識集らしいです。(現在はLYTに近い思想で
   - [Mersenne twister](./crypto/PRNG/MersenneTwister.md)
 - ブロックチェーン
   - Flash Loan Attack
+- [参考文献](./crypto/books.md)
 
 ## Web
 
 Webに関してはよわよわなので読み込むと良いかもしれない資料リストを集めています。(これ読むといいよみたいなのがあったら教えてくださると助かります！)
 
+- [Prototype Pollution](./web/PrototypePollution.md)
 - [CTFにおけるWebセキュリティ入門とまとめ](https://blog.hamayanhamayan.com/entry/2021/12/01/194114)
 - 常設Web問
   - [Web Security Academy](https://portswigger.net/web-security/all-labs)
@@ -248,25 +253,19 @@ Webに関してはよわよわなので読み込むと良いかもしれない�
   - [The Lord of the SQLI](https://los.rubiya.kr)
 - [SQL Injection list](https://github.com/payloadbox/sql-injection-payload-list)
 
+## Misc
+
+- [Pyjail](./misc/Pyjail.md)
+- [forensics](./misc/forensics/forensics.md)
+  - [Windows](./misc/forensics/windows.md)
+- [osint](./misc/osint/tools.md)
+
 ## 量子アルゴリズム
 
 - 各ゲートの紹介と量子計算の方法
 - Shor のアルゴリズム
 - 量子暗号通信
 - 量子中継ネットワーク
-
-## Kernel Code Reading
-
-- メモリ管理
-- ファイルシステム
-- ASLR
-
-## 構造探検隊
-
-- ELF
-- JPEG
-- FAT32
-- ZIP
 
 ## 電子回路
 
@@ -287,23 +286,39 @@ Webに関してはよわよわなので読み込むと良いかもしれない�
 - Social Engineering
 - Car Hacking
 - 航空技術
-- CPU / GPU
+- 構造探検隊
+  - [ELF](./other/Application/Structure/ZIP.md)
+  - JPEG
+  - [FAT32](./other/Application/Structure/FAT32.md)
+  - [ZIP](./other/Application/Structure/ZIP.md)
+- [CPU / GPU](./other/Application/Processor.md)
   - Spectre / Meltdown
-- rootkit
+  - [TEE](./other/Circuit/TEE.md)
+- [rootkit](./other/Circuit/Rootkit.md)
+- 仮想化技術
+  - [コンテナ仮想化技術](./other/Application/Container.md)
+  - [ハイパーバイザの作り方](https://syuu1228.github.io/howto_implement_hypervisor/)
 - bit trick
   - XOR swap
-- 仮想化技術
-  - [ハイパーバイザの作り方](https://syuu1228.github.io/howto_implement_hypervisor/)
-- プログラミング言語
-  - Hindley-Milner 型推論
+- [プログラミング言語](./other/Application/Programming.md)
+  - [型推論](./other/Application/Type.md)
 - 未定義動作
-- デバッガ
-- データベース
-- ネットワーク構成
-- Z3
-  - [シンボリック実行エンジン](./other/symbolic_execution.md)
-- 定理証明支援系
-- Deep Learning
+- [デバッガ](./pwn/Debugger.md)
+- [OS](./other/Application/OS.md)
+- サーバー
+  - [データベース](./other/Application/Server/RDBMS.md)
+  - [リバースプロキシ](other/Application/Server/ReverseProxy.md)
+  - [高速化](./other/Application/Server/fast.md)
+- [ネットワーク構成](./other/Application/Network/network.md)
+  - [SDR](./other/Application/Network/SDR.md)
+- [SAT/SMT](./other/Application/SAT-SMT/SAT-SMT.md)
+  - [シンボリック実行エンジン](./other/Application/SAT-SMT/symbolic_execution.md)
+  - [定理証明支援系](./other/Application/SAT-SMT/proof_assistant.md)
+- [レンダリング](./other/Application/Rendering/Rendering.md)
+  - [レイトレーシング](./other/Application/Rendering/RayTracing.md)
+  - [シェーダー](./other/Application/Rendering/Shader.md)
+- [ブロックチェーン](other/Application/Blockchain.md)
+- [Deep Learning](./other/Application/DeepLearning.md)
 - [【画像処理入門】アルゴリズム＆プログラミング](https://algorithm.joho.info/programming/image-processing/)
 - 超解像
 - [高速化](./other/fast.md)
